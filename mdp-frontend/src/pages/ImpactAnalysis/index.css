@@ -1,0 +1,1134 @@
+.impact-analysis-page {
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.impact-analysis-page .ant-layout-content {
+  padding: 24px;
+}
+
+.page-header {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.page-header h2 {
+  margin: 0;
+  color: #262626;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.page-header p {
+  margin: 8px 0 0 0;
+  color: #8c8c8c;
+  font-size: 14px;
+}
+
+.control-panel {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.impact-analysis-page .ant-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.impact-analysis-page .ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+  color: #262626;
+}
+
+.impact-analysis-page .ant-table-tbody > tr:hover > td {
+  background: #f5f5f5;
+}
+
+.impact-analysis-page .ant-table-tbody > tr.ant-table-row-selected > td {
+  background: #e6f7ff;
+}
+
+.impact-analysis-page .ant-progress-line {
+  margin: 0;
+}
+
+.impact-analysis-page .ant-progress-text {
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.impact-analysis-page .ant-badge {
+  font-size: 12px;
+}
+
+.impact-analysis-page .ant-tag {
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 0 8px;
+}
+
+.impact-analysis-page .ant-statistic {
+  text-align: center;
+}
+
+.impact-analysis-page .ant-statistic-title {
+  font-size: 14px;
+  color: #8c8c8c;
+  margin-bottom: 4px;
+}
+
+.impact-analysis-page .ant-statistic-content {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.impact-analysis-page .ant-statistic-content-prefix {
+  margin-right: 8px;
+}
+
+.impact-analysis-page .ant-drawer-header {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.impact-analysis-page .ant-drawer-body {
+  padding: 24px;
+}
+
+.impact-analysis-page .ant-descriptions-bordered .ant-descriptions-item-label {
+  background: #fafafa;
+  font-weight: 500;
+  width: 120px;
+}
+
+.impact-analysis-page .ant-descriptions-bordered .ant-descriptions-item-content {
+  padding: 16px 24px;
+}
+
+.impact-tree {
+  background: #fafafa;
+  border-radius: 6px;
+  padding: 16px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.impact-tree .ant-tree-node-content-wrapper {
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.impact-tree .ant-tree-node-content-wrapper:hover {
+  background: #e6f7ff;
+}
+
+.impact-tree .ant-tree-node-selected .ant-tree-node-content-wrapper {
+  background: #bae7ff;
+}
+
+.impact-tree .ant-tree-title {
+  font-size: 14px;
+  color: #262626;
+}
+
+.impact-analysis-page .ant-timeline {
+  padding: 16px 0;
+}
+
+.impact-analysis-page .ant-timeline-item {
+  padding-bottom: 20px;
+}
+
+.impact-analysis-page .ant-timeline-item-content {
+  margin-left: 24px;
+}
+
+.impact-analysis-page .ant-timeline-item-content > div:first-child {
+  font-weight: 500;
+  color: #262626;
+  margin-bottom: 4px;
+}
+
+.impact-analysis-page .ant-timeline-item-content > div:last-child {
+  font-size: 12px;
+  color: #8c8c8c;
+}
+
+.impact-analysis-page .ant-modal-header {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.impact-analysis-page .ant-modal-body {
+  padding: 24px;
+}
+
+.impact-analysis-page .ant-form-item-label > label {
+  font-weight: 500;
+  color: #262626;
+}
+
+.impact-analysis-page .ant-radio-group {
+  width: 100%;
+}
+
+.impact-analysis-page .ant-radio-wrapper {
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+
+.impact-analysis-page .ant-select {
+  width: 100%;
+}
+
+.impact-analysis-page .ant-select .ant-select-selector {
+  border-radius: 6px;
+}
+
+.impact-analysis-page .ant-input {
+  border-radius: 6px;
+}
+
+.impact-analysis-page .ant-btn {
+  border-radius: 6px;
+}
+
+.impact-analysis-page .ant-switch {
+  margin-right: 8px;
+}
+
+.impact-analysis-page .ant-alert {
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.impact-analysis-page .ant-tabs-tab {
+  font-weight: 500;
+  padding: 12px 16px;
+}
+
+.impact-analysis-page .ant-tabs-content-holder {
+  padding: 16px 0;
+}
+
+.impact-analysis-page .ant-tabs-tabpane {
+  outline: none;
+}
+
+/* 风险等级颜色 */
+.risk-high {
+  color: #ff4d4f;
+  background: #fff2f0;
+  border-color: #ffccc7;
+}
+
+.risk-medium {
+  color: #fa8c16;
+  background: #fff7e6;
+  border-color: #ffd591;
+}
+
+.risk-low {
+  color: #52c41a;
+  background: #f6ffed;
+  border-color: #b7eb8f;
+}
+
+/* 业务重要性颜色 */
+.criticality-critical {
+  color: #ff4d4f;
+  background: #fff2f0;
+  border-color: #ffccc7;
+}
+
+.criticality-important {
+  color: #fa8c16;
+  background: #fff7e6;
+  border-color: #ffd591;
+}
+
+.criticality-normal {
+  color: #1890ff;
+  background: #e6f7ff;
+  border-color: #91d5ff;
+}
+
+/* 状态颜色 */
+.status-active {
+  color: #52c41a;
+  background: #f6ffed;
+  border-color: #b7eb8f;
+}
+
+.status-inactive {
+  color: #fa8c16;
+  background: #fff7e6;
+  border-color: #ffd591;
+}
+
+.status-deprecated {
+  color: #ff4d4f;
+  background: #fff2f0;
+  border-color: #ffccc7;
+}
+
+/* 影响类型颜色 */
+.impact-direct {
+  color: #ff4d4f;
+  background: #fff2f0;
+  border-color: #ffccc7;
+}
+
+.impact-indirect {
+  color: #fa8c16;
+  background: #fff7e6;
+  border-color: #ffd591;
+}
+
+/* 对象类型图标颜色 */
+.type-table {
+  color: #1890ff;
+}
+
+.type-view {
+  color: #52c41a;
+}
+
+.type-job {
+  color: #722ed1;
+}
+
+.type-report {
+  color: #fa8c16;
+}
+
+.type-api {
+  color: #13c2c2;
+}
+
+.type-dashboard {
+  color: #eb2f96;
+}
+
+/* 进度条样式 */
+.progress-high {
+  .ant-progress-bg {
+    background: #ff4d4f;
+  }
+}
+
+.progress-medium {
+  .ant-progress-bg {
+    background: #faad14;
+  }
+}
+
+.progress-low {
+  .ant-progress-bg {
+    background: #52c41a;
+  }
+}
+
+/* 统计卡片样式 */
+.impact-analysis-page .ant-card .ant-statistic {
+  padding: 8px 0;
+}
+
+.impact-analysis-page .ant-card .ant-statistic-title {
+  font-size: 14px;
+  color: #8c8c8c;
+  margin-bottom: 8px;
+}
+
+.impact-analysis-page .ant-card .ant-statistic-content {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* 表格行选中效果 */
+.impact-analysis-page .ant-table-tbody > tr.ant-table-row-selected:hover > td {
+  background: #bae7ff;
+}
+
+/* 抽屉内容样式 */
+.impact-analysis-page .ant-drawer-body .ant-card {
+  margin-bottom: 16px;
+}
+
+.impact-analysis-page .ant-drawer-body .ant-card:last-child {
+  margin-bottom: 0;
+}
+
+/* 时间线样式优化 */
+.impact-analysis-page .ant-timeline-item-head {
+  background: #fff;
+  border: 2px solid #d9d9d9;
+}
+
+.impact-analysis-page .ant-timeline-item-head-green {
+  border-color: #52c41a;
+}
+
+.impact-analysis-page .ant-timeline-item-head-blue {
+  border-color: #1890ff;
+}
+
+.impact-analysis-page .ant-timeline-item-head-red {
+  border-color: #ff4d4f;
+}
+
+/* 搜索框样式 */
+.impact-analysis-page .ant-input-search .ant-input-group .ant-input {
+  border-radius: 6px 0 0 6px;
+}
+
+.impact-analysis-page .ant-input-search .ant-input-search-button {
+  border-radius: 0 6px 6px 0;
+}
+
+/* 选择器下拉样式 */
+.impact-analysis-page .ant-select-dropdown {
+  border-radius: 6px;
+}
+
+.impact-analysis-page .ant-select-item {
+  border-radius: 4px;
+  margin: 2px 8px;
+}
+
+.impact-analysis-page .ant-select-item-option-selected {
+  background: #e6f7ff;
+}
+
+/* 模态框样式 */
+.impact-analysis-page .ant-modal {
+  border-radius: 8px;
+}
+
+.impact-analysis-page .ant-modal-content {
+  border-radius: 8px;
+}
+
+.impact-analysis-page .ant-modal-header {
+  border-radius: 8px 8px 0 0;
+}
+
+/* 表单样式 */
+.impact-analysis-page .ant-form-item {
+  margin-bottom: 20px;
+}
+
+.impact-analysis-page .ant-form-item-label {
+  padding-bottom: 4px;
+}
+
+.impact-analysis-page .ant-form-item-control {
+  line-height: 1.5;
+}
+
+/* 日期选择器样式 */
+.impact-analysis-page .ant-picker {
+  border-radius: 6px;
+  width: 100%;
+}
+
+.impact-analysis-page .ant-picker-dropdown {
+  border-radius: 6px;
+}
+
+/* 开关样式 */
+.impact-analysis-page .ant-switch {
+  background: #bfbfbf;
+}
+
+.impact-analysis-page .ant-switch-checked {
+  background: #1890ff;
+}
+
+/* 分页样式 */
+.impact-analysis-page .ant-pagination {
+  text-align: right;
+  margin-top: 16px;
+}
+
+.impact-analysis-page .ant-pagination .ant-pagination-item {
+  border-radius: 4px;
+}
+
+.impact-analysis-page .ant-pagination .ant-pagination-item-active {
+  background: #1890ff;
+  border-color: #1890ff;
+}
+
+/* 工具提示样式 */
+.impact-analysis-page .ant-tooltip-inner {
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 4px;
+}
+
+/* 空状态样式 */
+.impact-analysis-page .ant-empty {
+  padding: 60px 0;
+}
+
+.impact-analysis-page .ant-empty-description {
+  color: #8c8c8c;
+}
+
+/* 加载状态样式 */
+.impact-analysis-page .ant-spin-container {
+  min-height: 400px;
+}
+
+.impact-analysis-page .ant-spin-dot {
+  font-size: 20px;
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+  .control-panel .ant-col {
+    margin-bottom: 8px;
+  }
+  
+  .impact-analysis-page .ant-table {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .impact-analysis-page .ant-layout-content {
+    padding: 16px;
+  }
+  
+  .page-header h2 {
+    font-size: 20px;
+  }
+  
+  .control-panel .ant-row {
+    flex-direction: column;
+  }
+  
+  .control-panel .ant-col {
+    width: 100% !important;
+    margin-bottom: 8px;
+  }
+  
+  .impact-analysis-page .ant-card .ant-statistic-content {
+    font-size: 20px;
+  }
+  
+  .impact-analysis-page .ant-drawer {
+    width: 100% !important;
+  }
+  
+  .impact-analysis-page .ant-modal {
+    width: 95% !important;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .impact-analysis-page .ant-layout-content {
+    padding: 12px;
+  }
+  
+  .page-header {
+    padding: 16px;
+  }
+  
+  .page-header h2 {
+    font-size: 18px;
+  }
+  
+  .impact-analysis-page .ant-table-thead > tr > th {
+    padding: 8px 4px;
+    font-size: 12px;
+  }
+  
+  .impact-analysis-page .ant-table-tbody > tr > td {
+    padding: 8px 4px;
+    font-size: 12px;
+  }
+  
+  .impact-analysis-page .ant-btn {
+    font-size: 12px;
+    height: 28px;
+    padding: 0 8px;
+  }
+}
+
+/* 动画效果 */
+.impact-analysis-page .ant-card {
+  transition: all 0.3s ease;
+}
+
+.impact-analysis-page .ant-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.impact-analysis-page .ant-btn {
+  transition: all 0.3s ease;
+}
+
+.impact-analysis-page .ant-table-tbody > tr {
+  transition: all 0.3s ease;
+}
+
+/* 自定义滚动条 */
+.impact-tree::-webkit-scrollbar {
+  width: 6px;
+}
+
+.impact-tree::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.impact-tree::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.impact-tree::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* 高亮效果 */
+.highlight-row {
+  background: #fff2e8 !important;
+  border: 1px solid #ffbb96;
+}
+
+.highlight-row:hover {
+  background: #ffe7d3 !important;
+}
+
+/* 风险评分进度条自定义样式 */
+.risk-progress-high .ant-progress-bg {
+  background: linear-gradient(90deg, #ff7875 0%, #ff4d4f 100%);
+}
+
+.risk-progress-medium .ant-progress-bg {
+  background: linear-gradient(90deg, #ffc069 0%, #faad14 100%);
+}
+
+.risk-progress-low .ant-progress-bg {
+  background: linear-gradient(90deg, #95de64 0%, #52c41a 100%);
+}
+
+/* 标签组样式 */
+.tag-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.tag-group .ant-tag {
+  margin: 0;
+}
+
+/* 操作按钮组样式 */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.action-buttons .ant-btn {
+  flex: 1;
+  min-width: 80px;
+}
+
+/* 数据为空时的样式 */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #8c8c8c;
+}
+
+.empty-state .anticon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  color: #d9d9d9;
+}
+
+.empty-state h3 {
+  color: #8c8c8c;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.empty-state p {
+  color: #bfbfbf;
+  font-size: 14px;
+}
+
+/* 批量操作栏样式 */
+.batch-action-bar {
+  background: #e6f7ff;
+  border: 1px solid #91d5ff;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.batch-action-bar .selected-info {
+  color: #1890ff;
+  font-weight: 500;
+}
+
+.batch-action-bar .batch-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* 状态指示器 */
+.status-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.status-indicator .status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.status-dot-active {
+  background: #52c41a;
+}
+
+.status-dot-inactive {
+  background: #faad14;
+}
+
+.status-dot-deprecated {
+  background: #ff4d4f;
+}
+
+/* 影响级别指示器 */
+.impact-level-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.impact-level-high {
+  background: #fff2f0;
+  color: #ff4d4f;
+  border: 1px solid #ffccc7;
+}
+
+.impact-level-medium {
+  background: #fff7e6;
+  color: #fa8c16;
+  border: 1px solid #ffd591;
+}
+
+.impact-level-low {
+  background: #f6ffed;
+  color: #52c41a;
+  border: 1px solid #b7eb8f;
+}
+
+/* 业务重要性指示器 */
+.criticality-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+}
+
+.criticality-indicator .anticon {
+  font-size: 14px;
+}
+
+.criticality-critical .anticon {
+  color: #ff4d4f;
+}
+
+.criticality-important .anticon {
+  color: #fa8c16;
+}
+
+.criticality-normal .anticon {
+  color: #1890ff;
+}
+
+/* 数据统计卡片增强样式 */
+.stat-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #1890ff 0%, #36cfc9 100%);
+}
+
+.stat-card-danger::before {
+  background: linear-gradient(90deg, #ff4d4f 0%, #ff7875 100%);
+}
+
+.stat-card-warning::before {
+  background: linear-gradient(90deg, #faad14 0%, #ffc069 100%);
+}
+
+.stat-card-success::before {
+  background: linear-gradient(90deg, #52c41a 0%, #73d13d 100%);
+}
+
+/* 分析进度指示器 */
+.analysis-progress {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #f0f9ff;
+  border: 1px solid #bae7ff;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.analysis-progress .anticon {
+  color: #1890ff;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 依赖关系树增强样式 */
+.dependency-tree {
+  background: #fafafa;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  padding: 16px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.dependency-tree .ant-tree-node-content-wrapper {
+  padding: 6px 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.dependency-tree .ant-tree-node-content-wrapper:hover {
+  background: #e6f7ff;
+  border-color: #91d5ff;
+}
+
+.dependency-tree .ant-tree-node-selected .ant-tree-node-content-wrapper {
+  background: #bae7ff;
+  border-color: #40a9ff;
+}
+
+/* 影响分析结果卡片 */
+.analysis-result-card {
+  border-left: 4px solid #1890ff;
+  margin-bottom: 16px;
+}
+
+.analysis-result-card.completed {
+  border-left-color: #52c41a;
+}
+
+.analysis-result-card.running {
+  border-left-color: #faad14;
+}
+
+.analysis-result-card.failed {
+  border-left-color: #ff4d4f;
+}
+
+/* 风险分布图表样式 */
+.risk-distribution {
+  display: flex;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.risk-item {
+  flex: 1;
+  text-align: center;
+  padding: 16px;
+  border-radius: 6px;
+  border: 1px solid #f0f0f0;
+}
+
+.risk-item-high {
+  background: #fff2f0;
+  border-color: #ffccc7;
+}
+
+.risk-item-medium {
+  background: #fff7e6;
+  border-color: #ffd591;
+}
+
+.risk-item-low {
+  background: #f6ffed;
+  border-color: #b7eb8f;
+}
+
+.risk-item .risk-count {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.risk-item .risk-label {
+  font-size: 12px;
+  color: #8c8c8c;
+}
+
+/* 时间轴增强样式 */
+.enhanced-timeline {
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 6px;
+}
+
+.enhanced-timeline .ant-timeline-item {
+  padding-bottom: 24px;
+}
+
+.enhanced-timeline .timeline-content {
+  background: #fff;
+  padding: 16px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  margin-left: 24px;
+}
+
+.enhanced-timeline .timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.enhanced-timeline .timeline-title {
+  font-weight: 600;
+  color: #262626;
+}
+
+.enhanced-timeline .timeline-time {
+  font-size: 12px;
+  color: #8c8c8c;
+}
+
+.enhanced-timeline .timeline-description {
+  color: #595959;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* 快速筛选标签 */
+.quick-filters {
+  margin-bottom: 16px;
+  padding: 16px;
+  background: #fafafa;
+  border-radius: 6px;
+}
+
+.quick-filters .filter-label {
+  font-weight: 500;
+  color: #262626;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.quick-filters .filter-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.quick-filters .filter-tag {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+}
+
+.quick-filters .filter-tag:hover {
+  border-color: #40a9ff;
+  color: #1890ff;
+}
+
+.quick-filters .filter-tag.active {
+  background: #1890ff;
+  border-color: #1890ff;
+  color: #fff;
+}
+
+/* 详情面板增强 */
+.detail-panel {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.detail-panel .panel-header {
+  background: #fafafa;
+  padding: 16px 24px;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-panel .panel-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #262626;
+  margin: 0;
+}
+
+.detail-panel .panel-body {
+  padding: 24px;
+}
+
+/* 操作确认对话框样式 */
+.impact-analysis-page .ant-modal-confirm .ant-modal-body {
+  padding: 32px 32px 24px;
+}
+
+.impact-analysis-page .ant-modal-confirm .ant-modal-confirm-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: #262626;
+}
+
+.impact-analysis-page .ant-modal-confirm .ant-modal-confirm-content {
+  margin-top: 8px;
+  color: #595959;
+}
+
+/* 加载骨架屏样式 */
+.skeleton-card {
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* 数据导出进度 */
+.export-progress {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  min-width: 300px;
+  text-align: center;
+}
+
+.export-progress .progress-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #262626;
+}
+
+.export-progress .progress-description {
+  color: #8c8c8c;
+  margin-bottom: 16px;
+}
+
+/* 错误状态样式 */
+.error-state {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.error-state .error-icon {
+  font-size: 64px;
+  color: #ff4d4f;
+  margin-bottom: 16px;
+}
+
+.error-state .error-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 8px;
+}
+
+.error-state .error-description {
+  color: #8c8c8c;
+  margin-bottom: 24px;
+}
+
+/* 成功状态样式 */
+.success-state {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.success-state .success-icon {
+  font-size: 48px;
+  color: #52c41a;
+  margin-bottom: 16px;
+}
+
+.success-state .success-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 8px;
+}
+
+.success-state .success-description {
+  color: #8c8c8c;
+}
+
+/* 打印样式 */
+@media print {
+  .impact-analysis-page .control-panel,
+  .impact-analysis-page .ant-pagination,
+  .impact-analysis-page .action-buttons {
+    display: none !important;
+  }
+  
+  .impact-analysis-page .ant-table {
+    font-size: 12px;
+  }
+  
+  .impact-analysis-page .ant-card {
+    box-shadow: none;
+    border: 1px solid #d9d9d9;
+  }
+}

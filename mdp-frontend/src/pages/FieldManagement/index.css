@@ -1,0 +1,470 @@
+.field-management-page {
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.field-management-page .ant-layout-content {
+  padding: 24px;
+}
+
+.page-header {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.page-header h2 {
+  margin: 0;
+  color: #262626;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.page-header p {
+  margin: 8px 0 0 0;
+  color: #8c8c8c;
+  font-size: 14px;
+}
+
+.search-filter-card {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.batch-operations {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  background: #e6f7ff;
+  border: 1px solid #91d5ff;
+}
+
+.batch-operations .ant-card-body {
+  padding: 12px 24px;
+}
+
+.field-management-page .ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+  color: #262626;
+}
+
+.field-management-page .ant-table-tbody > tr:hover > td {
+  background: #f5f5f5;
+}
+
+.field-management-page .ant-tag {
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 0 8px;
+}
+
+.field-management-page .ant-btn {
+  border-radius: 6px;
+}
+
+.field-management-page .ant-input {
+  border-radius: 6px;
+}
+
+.field-management-page .ant-select .ant-select-selector {
+  border-radius: 6px;
+}
+
+.field-management-page .ant-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.field-management-page .ant-modal .ant-modal-content {
+  border-radius: 8px;
+}
+
+.field-management-page .ant-form-item-label > label {
+  font-weight: 500;
+  color: #262626;
+}
+
+.field-management-page .ant-pagination {
+  text-align: right;
+  margin-top: 16px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .field-management-page .ant-layout-content {
+    padding: 16px;
+  }
+  
+  .page-header h2 {
+    font-size: 20px;
+  }
+  
+  .search-filter-card .ant-row {
+    flex-direction: column;
+  }
+  
+  .search-filter-card .ant-col {
+    width: 100% !important;
+    margin-bottom: 8px;
+  }
+}
+
+/* 表格滚动条样式 */
+.field-management-page .ant-table-body::-webkit-scrollbar {
+  height: 8px;
+}
+
+.field-management-page .ant-table-body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.field-management-page .ant-table-body::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.field-management-page .ant-table-body::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* 字段详情弹窗样式 */
+.field-management-page .ant-modal-info .ant-modal-body {
+  padding: 24px;
+}
+
+.field-management-page .ant-modal-info .ant-modal-body p {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.field-management-page .ant-modal-info .ant-modal-body strong {
+  color: #262626;
+  font-weight: 500;
+  min-width: 80px;
+  display: inline-block;
+}
+
+/* 加载状态样式 */
+.field-management-page .ant-spin-container {
+  min-height: 200px;
+}
+
+/* 空状态样式 */
+.field-management-page .ant-empty {
+  padding: 40px 0;
+}
+
+/* 标签组样式 */
+.field-management-page .ant-space-item .ant-tag {
+  margin-bottom: 4px;
+}
+
+/* 操作按钮样式 */
+.field-management-page .ant-btn-text {
+  padding: 4px 8px;
+  height: auto;
+}
+
+.field-management-page .ant-btn-text:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.field-management-page .ant-btn-text.ant-btn-dangerous:hover {
+  background: rgba(255, 77, 79, 0.1);
+  color: #ff4d4f;
+}
+
+/* 搜索框样式 */
+.field-management-page .ant-input-search .ant-input-group .ant-input-affix-wrapper {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.field-management-page .ant-input-search .ant-input-search-button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* 表单样式优化 */
+.field-management-page .ant-form-item {
+  margin-bottom: 16px;
+}
+
+.field-management-page .ant-form-item-label {
+  padding-bottom: 4px;
+}
+
+.field-management-page .ant-switch {
+  background: #bfbfbf;
+}
+
+.field-management-page .ant-switch-checked {
+  background: #1890ff;
+}
+
+/* 质量评分颜色 */
+.field-management-page .quality-score-high {
+  color: #52c41a;
+  font-weight: 500;
+}
+
+.field-management-page .quality-score-medium {
+  color: #faad14;
+  font-weight: 500;
+}
+
+.field-management-page .quality-score-low {
+  color: #ff4d4f;
+  font-weight: 500;
+}
+
+/* 状态标签样式 */
+.field-management-page .status-active {
+  background: #f6ffed;
+  border-color: #b7eb8f;
+  color: #389e0d;
+}
+
+.field-management-page .status-inactive {
+  background: #fff7e6;
+  border-color: #ffd591;
+  color: #d46b08;
+}
+
+.field-management-page .status-deprecated {
+  background: #fff2f0;
+  border-color: #ffb3b3;
+  color: #cf1322;
+}
+
+/* 敏感字段标识 */
+.field-management-page .sensitive-field {
+  background: #f9f0ff;
+  border-color: #d3adf7;
+  color: #722ed1;
+}
+
+/* 主键外键标识 */
+.field-management-page .primary-key {
+  background: #fff2f0;
+  border-color: #ffb3b3;
+  color: #cf1322;
+  font-weight: 500;
+}
+
+.field-management-page .foreign-key {
+  background: #fff7e6;
+  border-color: #ffd591;
+  color: #d46b08;
+  font-weight: 500;
+}
+
+/* 数据层级标签 */
+.field-management-page .data-layer-ods {
+  background: #f6ffed;
+  border-color: #b7eb8f;
+  color: #389e0d;
+}
+
+.field-management-page .data-layer-dwd {
+  background: #e6f7ff;
+  border-color: #91d5ff;
+  color: #0958d9;
+}
+
+.field-management-page .data-layer-dws {
+  background: #fff7e6;
+  border-color: #ffd591;
+  color: #d46b08;
+}
+
+.field-management-page .data-layer-ads {
+  background: #f9f0ff;
+  border-color: #d3adf7;
+  color: #722ed1;
+}
+
+/* 数据层级标签样式 */
+.data-level-ods {
+  background: #e6f7ff;
+  color: #1890ff;
+  border: 1px solid #91d5ff;
+}
+
+.data-level-dwd {
+  background: #f6ffed;
+  color: #52c41a;
+  border: 1px solid #b7eb8f;
+}
+
+.data-level-dws {
+  background: #fff2e8;
+  color: #fa8c16;
+  border: 1px solid #ffd591;
+}
+
+.data-level-ads {
+  background: #f9f0ff;
+  color: #722ed1;
+  border: 1px solid #d3adf7;
+}
+
+/* 统计概览区域样式 */
+.statistics-overview {
+  margin-bottom: 16px;
+}
+
+.stat-card {
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.stat-trend {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #666;
+}
+
+.trend-text {
+  margin-left: 8px;
+}
+
+/* 筛选标签页样式 */
+.filter-tabs .ant-tabs-tab {
+  font-weight: 500;
+}
+
+.filter-group {
+  margin-bottom: 16px;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* 主内容布局样式 */
+.main-content-layout {
+  background: transparent;
+}
+
+.content-sider {
+  background: #fff;
+  border-radius: 8px;
+  margin-right: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.sidebar-card {
+  height: 100%;
+  border: none;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.sidebar-header h4 {
+  margin: 0;
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.table-content {
+  background: transparent;
+}
+
+/* 字段详情抽屉样式 */
+.field-detail-content {
+  padding: 0;
+}
+
+.detail-item {
+  margin-bottom: 12px;
+}
+
+.detail-item label {
+  font-weight: 500;
+  color: #666;
+  margin-right: 8px;
+}
+
+.detail-item span {
+  color: #333;
+}
+
+/* 批量操作栏增强样式 */
+.batch-operations {
+  margin-bottom: 16px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+.batch-operations .ant-card-body {
+  padding: 12px 16px;
+}
+
+/* 树组件样式 */
+.ant-tree .ant-tree-node-content-wrapper {
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.ant-tree .ant-tree-node-content-wrapper:hover {
+  background-color: #f5f5f5;
+}
+
+.ant-tree .ant-tree-node-selected .ant-tree-node-content-wrapper {
+  background-color: #e6f7ff;
+}
+
+/* 响应式设计增强 */
+@media (max-width: 1200px) {
+  .content-sider {
+    width: 240px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .content-sider {
+    display: none;
+  }
+  
+  .statistics-overview .ant-col {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header .ant-col:first-child {
+    margin-bottom: 16px;
+  }
+  
+  .search-filter-card .ant-col {
+    margin-bottom: 8px;
+  }
+  
+  .stat-card {
+    margin-bottom: 16px;
+  }
+}

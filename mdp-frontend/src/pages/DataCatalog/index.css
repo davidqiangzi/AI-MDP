@@ -1,0 +1,527 @@
+/* 数据目录页面样式 */
+.data-catalog {
+  height: calc(100vh - 64px);
+  background: #f5f5f5;
+}
+
+.data-catalog .ant-layout {
+  height: 100%;
+  background: #f5f5f5;
+}
+
+/* 左侧目录树样式 */
+.catalog-sider {
+  background: #fff;
+  border-right: 1px solid #f0f0f0;
+  padding: 16px;
+}
+
+.catalog-sider .tree-card {
+  height: 100%;
+  border: none;
+  box-shadow: none;
+}
+
+.catalog-sider .tree-card .ant-card-body {
+  padding: 0;
+  height: calc(100% - 40px);
+  overflow-y: auto;
+}
+
+.catalog-sider .ant-tree {
+  background: transparent;
+}
+
+.catalog-sider .ant-tree-node-content-wrapper {
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.catalog-sider .ant-tree-node-content-wrapper:hover {
+  background: #f5f5f5;
+}
+
+.catalog-sider .ant-tree-node-selected .ant-tree-node-content-wrapper {
+  background: #e6f7ff;
+  border: 1px solid #91d5ff;
+}
+
+.catalog-sider .ant-tree-title {
+  font-size: 14px;
+  color: #262626;
+}
+
+.catalog-sider .ant-tree-switcher {
+  color: #8c8c8c;
+}
+
+.catalog-sider .ant-tree-switcher:hover {
+  color: #1890ff;
+}
+
+/* 右侧内容区样式 */
+.catalog-content {
+  padding: 16px;
+  overflow-y: auto;
+}
+
+/* 搜索卡片样式 */
+.search-card {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.search-card .ant-card-body {
+  padding: 16px;
+}
+
+.search-card .ant-input-search {
+  border-radius: 6px;
+}
+
+.search-card .ant-input-search .ant-input {
+  border-radius: 6px 0 0 6px;
+}
+
+.search-card .ant-input-search .ant-btn {
+  border-radius: 0 6px 6px 0;
+}
+
+/* 统计信息行样式 */
+.stats-row {
+  margin-bottom: 16px;
+}
+
+.stats-row .ant-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.stats-row .ant-statistic {
+  padding: 8px 0;
+}
+
+.stats-row .ant-statistic-title {
+  font-size: 12px;
+  color: #8c8c8c;
+  margin-bottom: 4px;
+}
+
+.stats-row .ant-statistic-content {
+  font-size: 20px;
+  font-weight: 600;
+  color: #262626;
+}
+
+/* 操作卡片样式 */
+.action-card {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.action-card .ant-card-body {
+  padding: 12px 16px;
+}
+
+/* 表格卡片样式 */
+.table-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.table-card .ant-card-body {
+  padding: 0;
+}
+
+/* 表格样式 */
+.data-catalog .ant-table {
+  border-radius: 0;
+}
+
+.data-catalog .ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+  color: #262626;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 12px 16px;
+}
+
+.data-catalog .ant-table-tbody > tr > td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.data-catalog .ant-table-tbody > tr:hover > td {
+  background: #fafafa;
+}
+
+.data-catalog .ant-table-row-selected > td {
+  background: #e6f7ff;
+}
+
+.data-catalog .ant-table-row-selected:hover > td {
+  background: #bae7ff;
+}
+
+/* 分页样式 */
+.pagination-wrapper {
+  padding: 16px;
+  text-align: right;
+  border-top: 1px solid #f0f0f0;
+  background: #fafafa;
+}
+
+.pagination-wrapper .ant-pagination {
+  margin: 0;
+}
+
+/* 标签样式 */
+.data-catalog .ant-tag {
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 0 8px;
+  margin: 2px;
+}
+
+/* 按钮样式 */
+.data-catalog .ant-btn {
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.data-catalog .ant-btn-primary {
+  background: #1890ff;
+  border-color: #1890ff;
+}
+
+.data-catalog .ant-btn-primary:hover {
+  background: #40a9ff;
+  border-color: #40a9ff;
+}
+
+.data-catalog .ant-btn-link {
+  color: #1890ff;
+  padding: 0;
+  height: auto;
+  line-height: 1.5;
+}
+
+.data-catalog .ant-btn-link:hover {
+  color: #40a9ff;
+}
+
+.data-catalog .ant-btn-text {
+  color: #8c8c8c;
+  padding: 4px;
+}
+
+.data-catalog .ant-btn-text:hover {
+  color: #1890ff;
+  background: #f5f5f5;
+}
+
+/* 进度条样式 */
+.data-catalog .ant-progress {
+  margin: 0;
+}
+
+.data-catalog .ant-progress-line {
+  margin-bottom: 4px;
+}
+
+.data-catalog .ant-progress-text {
+  font-size: 12px;
+  color: #262626;
+}
+
+/* 下拉菜单样式 */
+.data-catalog .ant-dropdown-menu {
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.data-catalog .ant-dropdown-menu-item {
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.data-catalog .ant-dropdown-menu-item:hover {
+  background: #f5f5f5;
+}
+
+.data-catalog .ant-dropdown-menu-item-danger:hover {
+  background: #fff2f0;
+  color: #ff4d4f;
+}
+
+/* 筛选面板样式 */
+.data-catalog .ant-form-item {
+  margin-bottom: 16px;
+}
+
+.data-catalog .ant-form-item-label {
+  padding-bottom: 4px;
+}
+
+.data-catalog .ant-form-item-label > label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #262626;
+}
+
+.data-catalog .ant-checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.data-catalog .ant-checkbox-wrapper {
+  font-size: 14px;
+  color: #595959;
+}
+
+.data-catalog .ant-checkbox-wrapper:hover {
+  color: #262626;
+}
+
+/* 选择器样式 */
+.data-catalog .ant-select {
+  border-radius: 6px;
+}
+
+.data-catalog .ant-select-selector {
+  border-radius: 6px;
+}
+
+.data-catalog .ant-select-dropdown {
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 单选按钮组样式 */
+.data-catalog .ant-radio-group {
+  border-radius: 6px;
+}
+
+.data-catalog .ant-radio-button-wrapper {
+  border-radius: 0;
+  font-size: 12px;
+  padding: 4px 12px;
+  height: 28px;
+  line-height: 20px;
+}
+
+.data-catalog .ant-radio-button-wrapper:first-child {
+  border-radius: 6px 0 0 6px;
+}
+
+.data-catalog .ant-radio-button-wrapper:last-child {
+  border-radius: 0 6px 6px 0;
+}
+
+.data-catalog .ant-radio-button-wrapper-checked {
+  background: #1890ff;
+  border-color: #1890ff;
+  color: #fff;
+}
+
+/* 空状态样式 */
+.data-catalog .ant-empty {
+  padding: 60px 0;
+}
+
+.data-catalog .ant-empty-image {
+  height: 60px;
+  margin-bottom: 16px;
+}
+
+.data-catalog .ant-empty-description {
+  color: #8c8c8c;
+  font-size: 14px;
+}
+
+/* 工具提示样式 */
+.data-catalog .ant-tooltip {
+  max-width: 300px;
+}
+
+.data-catalog .ant-tooltip-inner {
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+  .catalog-sider {
+    width: 240px !important;
+    min-width: 240px !important;
+    max-width: 240px !important;
+  }
+  
+  .catalog-content {
+    padding: 12px;
+  }
+  
+  .search-card .ant-card-body {
+    padding: 12px;
+  }
+  
+  .action-card .ant-card-body {
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .data-catalog .ant-layout {
+    flex-direction: column;
+  }
+  
+  .catalog-sider {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    height: 200px;
+    padding: 8px;
+  }
+  
+  .catalog-content {
+    padding: 8px;
+  }
+  
+  .search-card .ant-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .stats-row .ant-col {
+    margin-bottom: 8px;
+  }
+  
+  .action-card .ant-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .data-catalog .ant-table {
+    font-size: 12px;
+  }
+  
+  .data-catalog .ant-table-thead > tr > th {
+    padding: 8px 12px;
+  }
+  
+  .data-catalog .ant-table-tbody > tr > td {
+    padding: 8px 12px;
+  }
+  
+  .pagination-wrapper {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .catalog-sider {
+    height: 150px;
+    padding: 4px;
+  }
+  
+  .catalog-content {
+    padding: 4px;
+  }
+  
+  .search-card .ant-card-body {
+    padding: 8px;
+  }
+  
+  .action-card .ant-card-body {
+    padding: 4px 8px;
+  }
+  
+  .data-catalog .ant-btn {
+    font-size: 12px;
+    padding: 4px 8px;
+    height: auto;
+  }
+  
+  .data-catalog .ant-table {
+    font-size: 11px;
+  }
+  
+  .data-catalog .ant-tag {
+    font-size: 11px;
+    padding: 0 6px;
+  }
+}
+
+/* 动画效果 */
+.data-catalog .ant-card {
+  transition: all 0.3s ease;
+}
+
+.data-catalog .ant-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.data-catalog .ant-table-tbody > tr {
+  transition: background-color 0.3s ease;
+}
+
+.data-catalog .ant-btn {
+  transition: all 0.3s ease;
+}
+
+.data-catalog .ant-tag {
+  transition: all 0.3s ease;
+}
+
+.data-catalog .ant-progress {
+  transition: all 0.3s ease;
+}
+
+.data-catalog .ant-tree-node-content-wrapper {
+  transition: all 0.3s ease;
+}
+
+/* 滚动条样式 */
+.catalog-sider .ant-card-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.catalog-sider .ant-card-body::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  border-radius: 3px;
+}
+
+.catalog-sider .ant-card-body::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+  border-radius: 3px;
+}
+
+.catalog-sider .ant-card-body::-webkit-scrollbar-thumb:hover {
+  background: #bfbfbf;
+}
+
+.catalog-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.catalog-content::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.catalog-content::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+  border-radius: 4px;
+}
+
+.catalog-content::-webkit-scrollbar-thumb:hover {
+  background: #bfbfbf;
+}

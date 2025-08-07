@@ -1,0 +1,2 @@
+*.json filter=lfs diff=lfs merge=lfs -text
+mdp-frontend/package-lock.json filter=lfs diff=lfs merge=lfs -text

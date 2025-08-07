@@ -1,0 +1,576 @@
+/* 数据表详情页面样式 */
+.data-table-detail {
+  padding: 24px;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* 顶部信息卡片 */
+.data-table-detail .header-card {
+  margin-bottom: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.data-table-detail .header-card .ant-card-body {
+  padding: 24px;
+}
+
+/* 标签页样式 */
+.data-table-detail .ant-tabs {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.data-table-detail .ant-tabs-content-holder {
+  padding: 24px;
+}
+
+.data-table-detail .ant-tabs-tab {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.data-table-detail .ant-tabs-tab-active {
+  color: #1890ff;
+}
+
+/* 卡片样式 */
+.data-table-detail .ant-card {
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.data-table-detail .ant-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.data-table-detail .ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 16px 24px;
+}
+
+.data-table-detail .ant-card-head-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: #262626;
+}
+
+.data-table-detail .ant-card-body {
+  padding: 20px 24px;
+}
+
+.data-table-detail .ant-card-small .ant-card-head {
+  padding: 12px 16px;
+}
+
+.data-table-detail .ant-card-small .ant-card-body {
+  padding: 16px;
+}
+
+/* 描述列表样式 */
+.data-table-detail .ant-descriptions-item-label {
+  font-weight: 500;
+  color: #595959;
+  width: 120px;
+}
+
+.data-table-detail .ant-descriptions-item-content {
+  color: #262626;
+}
+
+/* 统计数字样式 */
+.data-table-detail .ant-statistic {
+  text-align: center;
+}
+
+.data-table-detail .ant-statistic-title {
+  font-size: 12px;
+  color: #8c8c8c;
+  margin-bottom: 4px;
+}
+
+.data-table-detail .ant-statistic-content {
+  font-size: 20px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.data-table-detail .ant-statistic-content-suffix {
+  font-size: 14px;
+  color: #8c8c8c;
+  margin-left: 4px;
+}
+
+/* 进度条样式 */
+.data-table-detail .ant-progress-circle {
+  margin: 8px;
+}
+
+.data-table-detail .ant-progress-text {
+  font-size: 12px !important;
+  font-weight: 600;
+}
+
+.data-table-detail .ant-progress-line {
+  margin: 0;
+}
+
+/* 标签样式 */
+.data-table-detail .ant-tag {
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 2px 8px;
+  margin: 2px;
+  border: none;
+}
+
+.data-table-detail .ant-tag-gold {
+  background: #fff7e6;
+  color: #d48806;
+}
+
+.data-table-detail .ant-tag-purple {
+  background: #f9f0ff;
+  color: #722ed1;
+}
+
+.data-table-detail .ant-tag-blue {
+  background: #e6f7ff;
+  color: #1890ff;
+}
+
+.data-table-detail .ant-tag-red {
+  background: #fff2f0;
+  color: #f5222d;
+}
+
+.data-table-detail .ant-tag-green {
+  background: #f6ffed;
+  color: #52c41a;
+}
+
+.data-table-detail .ant-tag-orange {
+  background: #fff7e6;
+  color: #fa8c16;
+}
+
+/* 表格样式 */
+.data-table-detail .ant-table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.data-table-detail .ant-table-thead > tr > th {
+  background: #fafafa;
+  border-bottom: 1px solid #f0f0f0;
+  font-weight: 600;
+  color: #262626;
+  padding: 12px 16px;
+}
+
+.data-table-detail .ant-table-tbody > tr > td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.data-table-detail .ant-table-tbody > tr:hover > td {
+  background: #fafafa;
+}
+
+.data-table-detail .ant-table-small .ant-table-thead > tr > th,
+.data-table-detail .ant-table-small .ant-table-tbody > tr > td {
+  padding: 8px 12px;
+}
+
+/* 按钮样式 */
+.data-table-detail .ant-btn {
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.data-table-detail .ant-btn-primary {
+  background: #1890ff;
+  border-color: #1890ff;
+}
+
+.data-table-detail .ant-btn-primary:hover {
+  background: #40a9ff;
+  border-color: #40a9ff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(24, 144, 255, 0.3);
+}
+
+.data-table-detail .ant-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* 输入框样式 */
+.data-table-detail .ant-input {
+  border-radius: 6px;
+  border: 1px solid #d9d9d9;
+  transition: all 0.3s ease;
+}
+
+.data-table-detail .ant-input:focus,
+.data-table-detail .ant-input-focused {
+  border-color: #40a9ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.data-table-detail .ant-input-search .ant-input-group .ant-input-affix-wrapper {
+  border-radius: 6px 0 0 6px;
+}
+
+.data-table-detail .ant-input-search .ant-btn {
+  border-radius: 0 6px 6px 0;
+}
+
+/* 选择器样式 */
+.data-table-detail .ant-select {
+  border-radius: 6px;
+}
+
+.data-table-detail .ant-select-selector {
+  border-radius: 6px !important;
+  border: 1px solid #d9d9d9 !important;
+  transition: all 0.3s ease;
+}
+
+.data-table-detail .ant-select-focused .ant-select-selector {
+  border-color: #40a9ff !important;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2) !important;
+}
+
+/* 分页样式 */
+.data-table-detail .ant-pagination {
+  margin-top: 24px;
+  text-align: right;
+}
+
+.data-table-detail .ant-pagination-item {
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+}
+
+.data-table-detail .ant-pagination-item-active {
+  background: #1890ff;
+  border-color: #1890ff;
+}
+
+.data-table-detail .ant-pagination-item-active a {
+  color: white;
+}
+
+/* 列表样式 */
+.data-table-detail .ant-list-item {
+  padding: 16px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.data-table-detail .ant-list-item:last-child {
+  border-bottom: none;
+}
+
+.data-table-detail .ant-list-item-meta-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #262626;
+  margin-bottom: 4px;
+}
+
+.data-table-detail .ant-list-item-meta-description {
+  font-size: 12px;
+  color: #8c8c8c;
+}
+
+/* 徽章样式 */
+.data-table-detail .ant-badge-status-dot {
+  width: 8px;
+  height: 8px;
+}
+
+.data-table-detail .ant-badge-status-error {
+  background: #f5222d;
+}
+
+.data-table-detail .ant-badge-status-warning {
+  background: #faad14;
+}
+
+.data-table-detail .ant-badge-status-default {
+  background: #d9d9d9;
+}
+
+/* 警告框样式 */
+.data-table-detail .ant-alert {
+  border-radius: 6px;
+  border: none;
+}
+
+.data-table-detail .ant-alert-info {
+  background: #e6f7ff;
+  border: 1px solid #91d5ff;
+}
+
+.data-table-detail .ant-alert-info .ant-alert-icon {
+  color: #1890ff;
+}
+
+/* 空状态样式 */
+.data-table-detail .ant-empty {
+  padding: 40px 0;
+}
+
+.data-table-detail .ant-empty-description {
+  color: #8c8c8c;
+  font-size: 14px;
+}
+
+/* 加载状态样式 */
+.data-table-detail .ant-spin {
+  color: #1890ff;
+}
+
+.data-table-detail .ant-spin-dot-item {
+  background-color: #1890ff;
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+  .data-table-detail {
+    padding: 16px;
+  }
+  
+  .data-table-detail .ant-card-body {
+    padding: 16px;
+  }
+  
+  .data-table-detail .ant-tabs-content-holder {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .data-table-detail {
+    padding: 12px;
+  }
+  
+  .data-table-detail .header-card .ant-card-body {
+    padding: 16px;
+  }
+  
+  .data-table-detail .ant-card-body {
+    padding: 12px;
+  }
+  
+  .data-table-detail .ant-tabs-content-holder {
+    padding: 12px;
+  }
+  
+  .data-table-detail .ant-table {
+    font-size: 12px;
+  }
+  
+  .data-table-detail .ant-statistic-content {
+    font-size: 16px;
+  }
+  
+  .data-table-detail .ant-progress-circle {
+    width: 80px !important;
+    height: 80px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .data-table-detail {
+    padding: 8px;
+  }
+  
+  .data-table-detail .header-card .ant-card-body {
+    padding: 12px;
+  }
+  
+  .data-table-detail .ant-card-body {
+    padding: 8px;
+  }
+  
+  .data-table-detail .ant-tabs-content-holder {
+    padding: 8px;
+  }
+  
+  .data-table-detail .ant-btn {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+  
+  .data-table-detail .ant-statistic-content {
+    font-size: 14px;
+  }
+  
+  .data-table-detail .ant-progress-circle {
+    width: 60px !important;
+    height: 60px !important;
+  }
+}
+
+/* 动画效果 */
+.data-table-detail .ant-card,
+.data-table-detail .ant-btn,
+.data-table-detail .ant-input,
+.data-table-detail .ant-select-selector {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 滚动条样式 */
+.data-table-detail ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.data-table-detail ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.data-table-detail ::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.data-table-detail ::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* 代码样式 */
+.data-table-detail .ant-typography code {
+  background: #f5f5f5;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 12px;
+}
+
+/* 文本样式 */
+.data-table-detail .ant-typography {
+  color: #262626;
+}
+
+.data-table-detail .ant-typography-caption {
+  color: #8c8c8c;
+  font-size: 12px;
+}
+
+/* 分割线样式 */
+.data-table-detail .ant-divider {
+  border-color: #f0f0f0;
+  margin: 16px 0;
+}
+
+/* 工具提示样式 */
+.data-table-detail .ant-tooltip {
+  font-size: 12px;
+}
+
+.data-table-detail .ant-tooltip-inner {
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+/* 特殊样式 */
+.data-table-detail .quality-score-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.data-table-detail .performance-chart-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background: #fafafa;
+  border-radius: 8px;
+  border: 2px dashed #d9d9d9;
+}
+
+.data-table-detail .sensitive-data-mask {
+  background: linear-gradient(90deg, #f0f0f0 25%, transparent 25%, transparent 50%, #f0f0f0 50%, #f0f0f0 75%, transparent 75%, transparent);
+  background-size: 8px 8px;
+  color: transparent;
+  border-radius: 2px;
+  padding: 0 4px;
+}
+
+/* 表格行选择样式 */
+.data-table-detail .ant-table-row-selected {
+  background: #e6f7ff;
+}
+
+.data-table-detail .ant-table-row-selected:hover {
+  background: #bae7ff !important;
+}
+
+/* 标签页指示器样式 */
+.data-table-detail .ant-tabs-tab-btn {
+  position: relative;
+}
+
+.data-table-detail .ant-tabs-tab-active .ant-tabs-tab-btn::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #1890ff;
+  border-radius: 1px;
+}
+
+/* 数据质量指标样式 */
+.data-table-detail .quality-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.data-table-detail .quality-metric-item {
+  text-align: center;
+  padding: 16px;
+  background: #fafafa;
+  border-radius: 8px;
+  border: 1px solid #f0f0f0;
+}
+
+.data-table-detail .quality-metric-item:hover {
+  background: #f0f0f0;
+  border-color: #d9d9d9;
+}
+
+/* 字段信息表格特殊样式 */
+.data-table-detail .column-info-table .ant-table-thead > tr > th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: #fafafa;
+}
+
+.data-table-detail .column-info-table .ant-table-tbody > tr > td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: white;
+}
+
+.data-table-detail .column-info-table .ant-table-tbody > tr:hover > td:first-child {
+  background: #fafafa;
+}

@@ -1,0 +1,284 @@
+.data-assets-page {
+  height: 100%;
+  background: #f5f7fa;
+}
+
+.data-assets-page .ant-layout {
+  height: 100%;
+}
+
+.data-assets-page .ant-layout-sider {
+  border-right: 1px solid #e8e8e8;
+}
+
+.data-assets-page .ant-tree {
+  background: transparent;
+}
+
+.data-assets-page .ant-tree .ant-tree-node-content-wrapper {
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.data-assets-page .ant-tree .ant-tree-node-content-wrapper:hover {
+  background-color: #e6f7ff;
+}
+
+.data-assets-page .ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected {
+  background-color: #1890ff;
+  color: #fff;
+}
+
+.data-assets-page .ant-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.data-assets-page .ant-table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.data-assets-page .ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+  border-bottom: 2px solid #e8e8e8;
+}
+
+.data-assets-page .table-row-even {
+  background-color: #fafafa;
+}
+
+.data-assets-page .table-row-odd {
+  background-color: #ffffff;
+}
+
+.data-assets-page .ant-table-tbody > tr:hover > td {
+  background-color: #e6f7ff !important;
+}
+
+.data-assets-page .ant-tag {
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 2px 8px;
+}
+
+.data-assets-page .ant-btn {
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.data-assets-page .ant-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.data-assets-page .ant-input-search .ant-input-group .ant-input-group-addon {
+  border-radius: 0 4px 4px 0;
+}
+
+.data-assets-page .ant-select {
+  border-radius: 4px;
+}
+
+.data-assets-page .ant-pagination {
+  text-align: center;
+}
+
+.data-assets-page .ant-pagination .ant-pagination-item {
+  border-radius: 4px;
+}
+
+.data-assets-page .ant-pagination .ant-pagination-item-active {
+  background: #1890ff;
+  border-color: #1890ff;
+}
+
+.data-assets-page .ant-pagination .ant-pagination-item-active a {
+  color: #fff;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .data-assets-page .ant-layout-sider {
+    position: absolute;
+    z-index: 100;
+    height: 100%;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .data-assets-page .ant-layout-content {
+    margin-left: 0;
+  }
+  
+  .data-assets-page .ant-table {
+    font-size: 12px;
+  }
+  
+  .data-assets-page .ant-card .ant-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .data-assets-page .ant-layout-content {
+    padding: 0 16px;
+  }
+  
+  .data-assets-page .ant-card {
+    margin-bottom: 12px;
+  }
+  
+  .data-assets-page .ant-table-thead {
+    display: none;
+  }
+  
+  .data-assets-page .ant-table-tbody > tr > td {
+    display: block;
+    border: none;
+    padding: 8px 16px;
+    text-align: left;
+  }
+  
+  .data-assets-page .ant-table-tbody > tr > td:before {
+    content: attr(data-label) ': ';
+    font-weight: bold;
+    display: inline-block;
+    width: 80px;
+  }
+  
+  .data-assets-page .ant-table-tbody > tr {
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    display: block;
+  }
+}
+
+/* 动画效果 */
+.data-assets-page .ant-card {
+  animation: fadeInUp 0.3s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.data-assets-page .ant-table-tbody > tr {
+  transition: all 0.2s ease;
+}
+
+.data-assets-page .ant-btn-text:hover {
+  background-color: rgba(24, 144, 255, 0.1);
+  color: #1890ff;
+}
+
+/* 加载状态 */
+.data-assets-page .ant-spin-container {
+  min-height: 400px;
+}
+
+/* 空状态 */
+.data-assets-page .ant-empty {
+  padding: 60px 0;
+}
+
+.data-assets-page .ant-empty-description {
+  color: #999;
+  font-size: 14px;
+}
+
+/* 筛选标签样式 */
+.data-assets-page .filter-tags {
+  background: #f0f2f5;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-top: 16px;
+}
+
+.data-assets-page .filter-tags .ant-tag {
+  margin-bottom: 4px;
+}
+
+/* 健康度评分样式 */
+.data-assets-page .health-score {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.data-assets-page .health-score .ant-rate {
+  font-size: 12px;
+}
+
+/* 操作按钮组样式 */
+.data-assets-page .action-buttons {
+  display: flex;
+  gap: 4px;
+}
+
+.data-assets-page .action-buttons .ant-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/* 分类树样式优化 */
+.data-assets-page .category-tree {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.data-assets-page .category-tree .ant-tree-title {
+  font-size: 14px;
+  color: #333;
+}
+
+.data-assets-page .category-tree .ant-tree-node-content-wrapper.ant-tree-node-selected .ant-tree-title {
+  color: #fff;
+}
+
+/* 搜索框样式 */
+.data-assets-page .search-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.data-assets-page .search-container .ant-input-search {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* 统计信息样式 */
+.data-assets-page .stats-info {
+  color: #666;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.data-assets-page .page-size-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #666;
+  font-size: 14px;
+}

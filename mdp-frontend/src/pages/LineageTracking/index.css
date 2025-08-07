@@ -1,0 +1,1441 @@
+.lineage-tracking-page {
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.lineage-tracking-page .ant-layout-content {
+  padding: 24px;
+}
+
+.page-header {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.page-header h2 {
+  margin: 0;
+  color: #262626;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.page-header p {
+  margin: 8px 0 0 0;
+  color: #8c8c8c;
+  font-size: 14px;
+}
+
+.control-panel {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.lineage-graph-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.graph-controls {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 6px;
+  padding: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.graph-controls .ant-btn {
+  margin: 0 2px;
+}
+
+.lineage-graph-svg {
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  transition: transform 0.3s ease;
+}
+
+.lineage-graph-svg:active {
+  cursor: grabbing;
+}
+
+.lineage-node {
+  transition: all 0.3s ease;
+}
+
+.lineage-node:hover .node-circle {
+  stroke-width: 4;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.lineage-node .node-label {
+  font-weight: 500;
+  pointer-events: none;
+}
+
+.lineage-node .node-icon {
+  pointer-events: none;
+}
+
+.edge {
+  transition: all 0.3s ease;
+}
+
+.edge:hover {
+  stroke-width: 3;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.edge-data_flow {
+  stroke: #1890ff;
+  stroke-dasharray: none;
+}
+
+.edge-dependency {
+  stroke: #52c41a;
+  stroke-dasharray: 5,5;
+}
+
+.edge-transformation {
+  stroke: #722ed1;
+  stroke-dasharray: 3,3;
+}
+
+.graph-legend {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 6px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  max-width: 200px;
+}
+
+.graph-legend h4 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.legend-section {
+  margin-bottom: 12px;
+}
+
+.legend-section:last-child {
+  margin-bottom: 0;
+}
+
+.legend-title {
+  font-weight: 500;
+  color: #595959;
+  margin-bottom: 6px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.legend-item:last-child {
+  margin-bottom: 0;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.legend-line {
+  width: 20px;
+  height: 2px;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.legend-item span {
+  font-size: 12px;
+  color: #595959;
+}
+
+.lineage-tracking-page .ant-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.lineage-tracking-page .ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+  color: #262626;
+}
+
+.lineage-tracking-page .ant-table-tbody > tr:hover > td {
+  background: #f5f5f5;
+}
+
+.lineage-tracking-page .ant-statistic {
+  text-align: center;
+}
+
+.lineage-tracking-page .ant-statistic-title {
+  font-size: 14px;
+  color: #8c8c8c;
+  margin-bottom: 4px;
+}
+
+.lineage-tracking-page .ant-statistic-content {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.lineage-tracking-page .ant-statistic-content-prefix {
+  margin-right: 8px;
+}
+
+.lineage-tracking-page .ant-drawer-header {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.lineage-tracking-page .ant-drawer-body {
+  padding: 24px;
+}
+
+.lineage-tracking-page .ant-descriptions-bordered .ant-descriptions-item-label {
+  background: #fafafa;
+  font-weight: 500;
+  width: 120px;
+}
+
+.lineage-tracking-page .ant-descriptions-bordered .ant-descriptions-item-content {
+  padding: 16px 24px;
+}
+
+.lineage-tracking-page .ant-tabs-tab {
+  font-weight: 500;
+  padding: 12px 16px;
+}
+
+.lineage-tracking-page .ant-tabs-content-holder {
+  padding: 16px 0;
+}
+
+.lineage-tracking-page .ant-steps-vertical .ant-steps-item-content {
+  min-height: 48px;
+}
+
+.lineage-tracking-page .ant-steps-item-title {
+  font-weight: 500;
+  color: #262626;
+}
+
+.lineage-tracking-page .ant-steps-item-description {
+  color: #8c8c8c;
+  font-size: 12px;
+}
+
+.lineage-tracking-page .ant-progress-line {
+  margin: 0;
+}
+
+.lineage-tracking-page .ant-badge {
+  font-size: 12px;
+}
+
+.lineage-tracking-page .ant-tag {
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 0 8px;
+}
+
+.lineage-tracking-page .ant-modal-header {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.lineage-tracking-page .ant-modal-body {
+  padding: 24px;
+}
+
+.lineage-tracking-page .ant-form-item-label > label {
+  font-weight: 500;
+  color: #262626;
+}
+
+.lineage-tracking-page .ant-radio-group {
+  width: 100%;
+}
+
+.lineage-tracking-page .ant-radio-wrapper {
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+
+.lineage-tracking-page .ant-select {
+  width: 100%;
+}
+
+.lineage-tracking-page .ant-select .ant-select-selector {
+  border-radius: 6px;
+}
+
+.lineage-tracking-page .ant-input {
+  border-radius: 6px;
+}
+
+.lineage-tracking-page .ant-btn {
+  border-radius: 6px;
+}
+
+.lineage-tracking-page .ant-switch {
+  margin-right: 8px;
+}
+
+.lineage-tracking-page .ant-alert {
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+/* 节点状态颜色 */
+.node-active {
+  fill: #1890ff;
+}
+
+.node-inactive {
+  fill: #faad14;
+}
+
+.node-deprecated {
+  fill: #ff4d4f;
+}
+
+/* 节点类型样式 */
+.node-type-table {
+  stroke: #1890ff;
+}
+
+.node-type-view {
+  stroke: #52c41a;
+}
+
+.node-type-job {
+  stroke: #722ed1;
+}
+
+.node-type-report {
+  stroke: #fa8c16;
+}
+
+.node-type-api {
+  stroke: #13c2c2;
+}
+
+.node-type-dashboard {
+  stroke: #eb2f96;
+}
+
+.node-type-field {
+  stroke: #f759ab;
+}
+
+/* 高亮效果 */
+.node-highlighted {
+  animation: nodeGlow 2s infinite;
+}
+
+@keyframes nodeGlow {
+  0%, 100% {
+    stroke-width: 3;
+    stroke: #ff4d4f;
+  }
+  50% {
+    stroke-width: 6;
+    stroke: #ff7875;
+  }
+}
+
+.edge-highlighted {
+  stroke: #ff4d4f;
+  stroke-width: 4;
+  animation: edgeFlow 2s infinite;
+}
+
+@keyframes edgeFlow {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 20;
+  }
+}
+
+/* 路径追踪动画 */
+.path-tracking {
+  stroke: #ff4d4f;
+  stroke-width: 3;
+  stroke-dasharray: 8,4;
+  animation: pathFlow 1.5s linear infinite;
+}
+
+@keyframes pathFlow {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 12;
+  }
+}
+
+/* 节点悬浮效果 */
+.node-hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
+}
+
+/* 缩放控制样式 */
+.zoom-controls {
+  display: flex;
+  gap: 4px;
+}
+
+.zoom-controls .ant-btn {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 图谱导航小地图 */
+.minimap {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 200px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.minimap svg {
+  width: 100%;
+  height: 100%;
+}
+
+.minimap .viewport {
+  fill: rgba(24, 144, 255, 0.2);
+  stroke: #1890ff;
+  stroke-width: 1;
+}
+
+/* 追踪进度指示器 */
+.tracking-progress {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  min-width: 300px;
+  text-align: center;
+}
+
+.tracking-progress .progress-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #262626;
+}
+
+.tracking-progress .progress-description {
+  color: #8c8c8c;
+  margin-bottom: 16px;
+}
+
+/* 路径步骤样式 */
+.path-steps {
+  background: #fafafa;
+  border-radius: 6px;
+  padding: 16px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.path-steps .ant-steps-vertical .ant-steps-item {
+  padding-bottom: 16px;
+}
+
+.path-steps .ant-steps-item-icon {
+  background: #fff;
+  border: 2px solid #d9d9d9;
+}
+
+.path-steps .ant-steps-item-finish .ant-steps-item-icon {
+  background: #52c41a;
+  border-color: #52c41a;
+}
+
+.path-steps .ant-steps-item-error .ant-steps-item-icon {
+  background: #ff4d4f;
+  border-color: #ff4d4f;
+}
+
+/* 会话状态指示器 */
+.session-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.session-status .status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.status-dot-active {
+  background: #52c41a;
+  animation: pulse 2s infinite;
+}
+
+.status-dot-completed {
+  background: #1890ff;
+}
+
+.status-dot-paused {
+  background: #faad14;
+}
+
+.status-dot-failed {
+  background: #ff4d4f;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* 数据流动画 */
+.data-flow-animation {
+  stroke-dasharray: 6,4;
+  animation: dataFlow 2s linear infinite;
+}
+
+@keyframes dataFlow {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 10;
+  }
+}
+
+/* 节点分组样式 */
+.node-group {
+  fill: none;
+  stroke: #d9d9d9;
+  stroke-width: 1;
+  stroke-dasharray: 3,3;
+  rx: 8;
+  ry: 8;
+  opacity: 0.7;
+}
+
+.node-group-label {
+  font-size: 14px;
+  font-weight: 500;
+  fill: #8c8c8c;
+  text-anchor: middle;
+}
+
+/* 连接点样式 */
+.connection-point {
+  fill: #fff;
+  stroke: #1890ff;
+  stroke-width: 2;
+  r: 4;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.lineage-node:hover .connection-point {
+  opacity: 1;
+}
+
+/* 工具提示样式 */
+.node-tooltip {
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1000;
+}
+
+.edge-tooltip {
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1000;
+}
+
+/* 搜索高亮 */
+.search-highlighted {
+  stroke: #ff4d4f;
+  stroke-width: 4;
+  animation: searchPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes searchPulse {
+  0%, 100% {
+    stroke-opacity: 1;
+  }
+  50% {
+    stroke-opacity: 0.5;
+  }
+}
+
+/* 层级指示器 */
+.level-indicator {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 6px;
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.level-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+
+.level-item:last-child {
+  margin-bottom: 0;
+}
+
+.level-color {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.level-0 { background: #1890ff; }
+.level-1 { background: #52c41a; }
+.level-2 { background: #faad14; }
+.level-3 { background: #722ed1; }
+.level-4 { background: #fa8c16; }
+.level-negative { background: #ff4d4f; }
+
+/* 表格增强样式 */
+.lineage-tracking-page .ant-table-tbody > tr.ant-table-row-selected > td {
+  background: #e6f7ff;
+}
+
+.lineage-tracking-page .ant-table-tbody > tr.ant-table-row-selected:hover > td {
+  background: #bae7ff;
+}
+
+/* 分页样式 */
+.lineage-tracking-page .ant-pagination {
+  text-align: right;
+  margin-top: 16px;
+}
+
+.lineage-tracking-page .ant-pagination .ant-pagination-item {
+  border-radius: 4px;
+}
+
+.lineage-tracking-page .ant-pagination .ant-pagination-item-active {
+  background: #1890ff;
+  border-color: #1890ff;
+}
+
+/* 空状态样式 */
+.lineage-tracking-page .ant-empty {
+  padding: 60px 0;
+}
+
+.lineage-tracking-page .ant-empty-description {
+  color: #8c8c8c;
+}
+
+/* 加载状态样式 */
+.lineage-tracking-page .ant-spin-container {
+  min-height: 400px;
+}
+
+.lineage-tracking-page .ant-spin-dot {
+  font-size: 20px;
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+  .control-panel .ant-col {
+    margin-bottom: 8px;
+  }
+  
+  .lineage-graph-container {
+    height: 500px;
+  }
+  
+  .graph-legend {
+    max-width: 150px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lineage-tracking-page .ant-layout-content {
+    padding: 16px;
+  }
+  
+  .page-header h2 {
+    font-size: 20px;
+  }
+  
+  .control-panel .ant-row {
+    flex-direction: column;
+  }
+  
+  .control-panel .ant-col {
+    width: 100% !important;
+    margin-bottom: 8px;
+  }
+  
+  .lineage-graph-container {
+    height: 400px;
+  }
+  
+  .graph-controls {
+    position: static;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  .graph-legend {
+    position: static;
+    margin-top: 16px;
+    max-width: none;
+  }
+  
+  .minimap {
+    display: none;
+  }
+  
+  .level-indicator {
+    position: static;
+    transform: none;
+    margin-bottom: 16px;
+  }
+  
+  .lineage-tracking-page .ant-statistic-content {
+    font-size: 20px;
+  }
+  
+  .lineage-tracking-page .ant-drawer {
+    width: 100% !important;
+  }
+  
+  .lineage-tracking-page .ant-modal {
+    width: 95% !important;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .lineage-tracking-page .ant-layout-content {
+    padding: 12px;
+  }
+  
+  .page-header {
+    padding: 16px;
+  }
+  
+  .page-header h2 {
+    font-size: 18px;
+  }
+  
+  .lineage-graph-container {
+    height: 300px;
+  }
+  
+  .lineage-tracking-page .ant-table-thead > tr > th {
+    padding: 8px 4px;
+    font-size: 12px;
+  }
+  
+  .lineage-tracking-page .ant-table-tbody > tr > td {
+    padding: 8px 4px;
+    font-size: 12px;
+  }
+  
+  .lineage-tracking-page .ant-btn {
+    font-size: 12px;
+    height: 28px;
+    padding: 0 8px;
+  }
+}
+
+/* 动画效果 */
+.lineage-tracking-page .ant-card {
+  transition: all 0.3s ease;
+}
+
+.lineage-tracking-page .ant-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.lineage-tracking-page .ant-btn {
+  transition: all 0.3s ease;
+}
+
+.lineage-tracking-page .ant-table-tbody > tr {
+  transition: all 0.3s ease;
+}
+
+/* 自定义滚动条 */
+.path-steps::-webkit-scrollbar {
+  width: 6px;
+}
+
+.path-steps::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.path-steps::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.path-steps::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* 全屏模式样式 */
+.fullscreen-mode {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: #fff;
+}
+
+.fullscreen-mode .lineage-graph-container {
+  height: 100vh;
+  border: none;
+  border-radius: 0;
+}
+
+/* 拖拽模式样式 */
+.drag-mode {
+  cursor: move;
+}
+
+.drag-mode .lineage-node {
+  cursor: move;
+}
+
+/* 选择模式样式 */
+.select-mode .lineage-node {
+  cursor: pointer;
+}
+
+.select-mode .node-selected {
+  stroke: #ff4d4f;
+  stroke-width: 4;
+}
+
+/* 连接模式样式 */
+.connect-mode .lineage-node {
+  cursor: crosshair;
+}
+
+.connect-mode .connection-point {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* 测量工具样式 */
+.measure-tool {
+  stroke: #fa8c16;
+  stroke-width: 2;
+  stroke-dasharray: 5,5;
+  fill: none;
+}
+
+.measure-label {
+  background: rgba(250, 140, 22, 0.9);
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 11px;
+  pointer-events: none;
+}
+
+/* 网格样式 */
+.grid-pattern {
+  stroke: #f0f0f0;
+  stroke-width: 1;
+  fill: none;
+}
+
+.grid-major {
+  stroke: #e6e6e6;
+  stroke-width: 1;
+}
+
+/* 坐标轴样式 */
+.axis {
+  stroke: #d9d9d9;
+  stroke-width: 1;
+}
+
+.axis-label {
+  font-size: 10px;
+  fill: #8c8c8c;
+  text-anchor: middle;
+}
+
+/* 性能优化相关样式 */
+.low-quality-mode .lineage-node {
+  transition: none;
+}
+
+.low-quality-mode .edge {
+  transition: none;
+}
+
+.low-quality-mode .node-circle {
+  filter: none;
+}
+
+/* 打印样式 */
+@media print {
+  .lineage-tracking-page .control-panel,
+  .lineage-tracking-page .graph-controls,
+  .lineage-tracking-page .ant-pagination,
+  .lineage-tracking-page .minimap {
+    display: none !important;
+  }
+  
+  .lineage-tracking-page .lineage-graph-container {
+    height: 400px;
+    border: 1px solid #000;
+  }
+  
+  .lineage-tracking-page .ant-table {
+    font-size: 12px;
+  }
+  
+  .lineage-tracking-page .ant-card {
+    box-shadow: none;
+    border: 1px solid #d9d9d9;
+  }
+}
+
+/* 主题色彩变量 */
+:root {
+  --primary-color: #1890ff;
+  --success-color: #52c41a;
+  --warning-color: #faad14;
+  --error-color: #ff4d4f;
+  --info-color: #13c2c2;
+  --purple-color: #722ed1;
+  --orange-color: #fa8c16;
+  --pink-color: #eb2f96;
+}
+
+/* 深色主题支持 */
+@media (prefers-color-scheme: dark) {
+  .lineage-tracking-page {
+    background: #141414;
+  }
+  
+  .lineage-tracking-page .ant-card {
+    background: #1f1f1f;
+    border-color: #303030;
+  }
+  
+  .lineage-graph-container {
+    background: #1f1f1f;
+    border-color: #303030;
+  }
+  
+  .grid-pattern {
+    stroke: #303030;
+  }
+  
+  .graph-legend {
+    background: rgba(31, 31, 31, 0.95);
+    color: #fff;
+  }
+  
+  .node-label {
+    fill: #fff;
+  }
+}
+
+/* 无障碍支持 */
+@media (prefers-reduced-motion: reduce) {
+  .lineage-tracking-page * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* 高对比度支持 */
+@media (prefers-contrast: high) {
+  .lineage-node {
+    stroke-width: 3;
+  }
+  
+  .edge {
+    stroke-width: 3;
+  }
+  
+  .node-label {
+    font-weight: 600;
+  }
+}
+
+/* 触摸设备优化 */
+@media (pointer: coarse) {
+  .lineage-node {
+    r: 35;
+  }
+  
+  .graph-controls .ant-btn {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .connection-point {
+    r: 6;
+  }
+}
+
+/* 键盘导航支持 */
+.lineage-node:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+.edge:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* 错误状态样式 */
+.error-state {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.error-state .error-icon {
+  font-size: 64px;
+  color: var(--error-color);
+  margin-bottom: 16px;
+}
+
+.error-state .error-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 8px;
+}
+
+.error-state .error-description {
+  color: #8c8c8c;
+  margin-bottom: 24px;
+}
+
+/* 成功状态样式 */
+.success-state {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.success-state .success-icon {
+  font-size: 48px;
+  color: var(--success-color);
+  margin-bottom: 16px;
+}
+
+.success-state .success-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 8px;
+}
+
+.success-state .success-description {
+  color: #8c8c8c;
+}
+
+/* 数据质量指示器 */
+.quality-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.quality-high {
+  background: #f6ffed;
+  color: #52c41a;
+  border: 1px solid #b7eb8f;
+}
+
+.quality-medium {
+  background: #fff7e6;
+  color: #fa8c16;
+  border: 1px solid #ffd591;
+}
+
+.quality-low {
+  background: #fff2f0;
+  color: #ff4d4f;
+  border: 1px solid #ffccc7;
+}
+
+/* 使用频率指示器 */
+.usage-indicator {
+  display: inline-block;
+  width: 60px;
+  height: 4px;
+  background: #f0f0f0;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.usage-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #52c41a 0%, #1890ff 50%, #722ed1 100%);
+  transition: width 0.3s ease;
+}
+
+/* 业务术语标签 */
+.business-term {
+  background: #f0f5ff;
+  color: #1890ff;
+  border: 1px solid #adc6ff;
+  border-radius: 10px;
+  padding: 2px 8px;
+  font-size: 11px;
+  margin: 2px;
+  display: inline-block;
+}
+
+/* 元数据面板 */
+.metadata-panel {
+  background: #fafafa;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  padding: 12px;
+  margin-top: 12px;
+}
+
+.metadata-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.metadata-item:last-child {
+  border-bottom: none;
+}
+
+.metadata-key {
+  font-weight: 500;
+  color: #595959;
+  font-size: 12px;
+}
+
+.metadata-value {
+  color: #262626;
+  font-size: 12px;
+}
+
+/* 连接信息面板 */
+.connection-info {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  pointer-events: none;
+  z-index: 1000;
+  max-width: 200px;
+}
+
+.connection-info .info-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.connection-info .info-item {
+  margin-bottom: 2px;
+}
+
+.connection-info .info-item:last-child {
+  margin-bottom: 0;
+}
+
+/* 路径高亮样式 */
+.path-highlight {
+  stroke: #ff4d4f;
+  stroke-width: 4;
+  filter: drop-shadow(0 0 6px rgba(255, 77, 79, 0.6));
+}
+
+.path-node-highlight {
+  stroke: #ff4d4f;
+  stroke-width: 4;
+  filter: drop-shadow(0 0 8px rgba(255, 77, 79, 0.6));
+}
+
+/* 层次布局指示器 */
+.layer-separator {
+  stroke: #d9d9d9;
+  stroke-width: 1;
+  stroke-dasharray: 2,2;
+  opacity: 0.5;
+}
+
+.layer-label {
+  font-size: 10px;
+  fill: #8c8c8c;
+  text-anchor: middle;
+  font-weight: 500;
+}
+
+/* 统计信息卡片 */
+.stats-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  border: none;
+}
+
+.stats-card .ant-statistic-title {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.stats-card .ant-statistic-content {
+  color: #fff;
+}
+
+/* 操作历史时间线 */
+.operation-timeline {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 16px;
+  background: #fafafa;
+  border-radius: 6px;
+}
+
+.operation-timeline .ant-timeline-item-content {
+  background: #fff;
+  padding: 12px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+}
+
+/* 快速操作按钮组 */
+.quick-actions {
+  position: absolute;
+  top: 60px;
+  right: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 10;
+}
+
+.quick-actions .ant-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* 搜索结果高亮 */
+.search-result-highlight {
+  background: #fff2e8;
+  border: 2px solid #ffa940;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+/* 导出进度条 */
+.export-progress {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  min-width: 300px;
+  text-align: center;
+}
+
+/* 性能监控指示器 */
+.performance-indicator {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-family: monospace;
+  z-index: 10;
+}
+
+/* 协作指示器 */
+.collaboration-indicator {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(24, 144, 255, 0.9);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.collaboration-indicator .user-avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+/* 版本控制指示器 */
+.version-indicator {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(114, 46, 209, 0.9);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 11px;
+  z-index: 10;
+}
+
+/* 智能推荐面板 */
+.recommendation-panel {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 250px;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.recommendation-panel .panel-header {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  font-weight: 600;
+  color: #262626;
+}
+
+.recommendation-panel .panel-body {
+  padding: 16px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.recommendation-item {
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.recommendation-item:hover {
+  background: #f5f5f5;
+}
+
+.recommendation-item:last-child {
+  border-bottom: none;
+}
+
+.recommendation-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: #262626;
+  margin-bottom: 2px;
+}
+
+.recommendation-description {
+  font-size: 11px;
+  color: #8c8c8c;
+  line-height: 1.4;
+}
