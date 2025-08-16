@@ -1,0 +1,542 @@
+/* 质量报告页面样式 */
+
+.quality-reports-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* 标签页样式 */
+.reports-tabs {
+  margin-bottom: 0;
+}
+
+.reports-tabs .ant-tabs-nav {
+  margin-bottom: 16px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+}
+
+.reports-tabs .ant-tabs-tab {
+  margin: 0 4px;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.reports-tabs .ant-tabs-tab:hover {
+  background: #f0f9ff;
+  color: #1890ff;
+  border-color: #bae6fd;
+}
+
+.reports-tabs .ant-tabs-tab-active {
+  background: #1890ff;
+  color: #fff;
+  border-color: #1890ff;
+}
+
+.reports-tabs .ant-tabs-tab .anticon {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.reports-tabs .ant-tabs-content-holder {
+  background: transparent;
+}
+
+/* 页面头部样式 */
+.reports-header {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reports-header .ant-card-body {
+  padding: 16px 24px;
+}
+
+/* 表格样式优化 */
+.quality-reports-page .ant-table {
+  font-size: 14px;
+}
+
+.quality-reports-page .ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 2px solid #e5e7eb;
+  padding: 16px;
+}
+
+.quality-reports-page .ant-table-tbody > tr:hover > td {
+  background: #f8fafc;
+}
+
+.quality-reports-page .ant-table-tbody > tr > td {
+  padding: 16px;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+/* 操作按钮样式 */
+.quality-reports-page .ant-btn-text {
+  padding: 6px 8px;
+  height: auto;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.quality-reports-page .ant-btn-text:hover {
+  background: #f1f5f9;
+  transform: translateY(-1px);
+}
+
+.quality-reports-page .ant-btn-text.ant-btn-dangerous:hover {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+/* 标签样式优化 */
+.quality-reports-page .ant-tag {
+  margin: 2px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.quality-reports-page .ant-tag .anticon {
+  font-size: 12px;
+}
+
+/* 搜索和筛选区域 */
+.quality-reports-page .ant-input-search {
+  border-radius: 6px;
+}
+
+.quality-reports-page .ant-select {
+  border-radius: 6px;
+}
+
+.quality-reports-page .ant-select-selector {
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  transition: all 0.2s ease;
+}
+
+.quality-reports-page .ant-select-focused .ant-select-selector {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+/* 模态框样式 */
+.quality-reports-page .ant-modal {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.quality-reports-page .ant-modal-header {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 20px 24px;
+  background: #fafafa;
+}
+
+.quality-reports-page .ant-modal-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.quality-reports-page .ant-modal-body {
+  padding: 24px;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+/* 表单样式优化 */
+.quality-reports-page .ant-form-item-label > label {
+  font-weight: 500;
+  color: #374151;
+}
+
+.quality-reports-page .ant-input,
+.quality-reports-page .ant-input-number,
+.quality-reports-page .ant-select-selector,
+.quality-reports-page .ant-picker {
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  transition: all 0.2s ease;
+}
+
+.quality-reports-page .ant-input:focus,
+.quality-reports-page .ant-input-number:focus,
+.quality-reports-page .ant-select-focused .ant-select-selector,
+.quality-reports-page .ant-picker:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.quality-reports-page .ant-input::placeholder {
+  color: #9ca3af;
+}
+
+/* 复选框组样式 */
+.quality-reports-page .ant-checkbox-group {
+  width: 100%;
+}
+
+.quality-reports-page .ant-checkbox-wrapper {
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.quality-reports-page .ant-checkbox-wrapper:hover {
+  background: #f8fafc;
+}
+
+.quality-reports-page .ant-checkbox-wrapper-checked {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+}
+
+/* 单选框组样式 */
+.quality-reports-page .ant-radio-group {
+  display: flex;
+  gap: 16px;
+}
+
+.quality-reports-page .ant-radio-wrapper {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s ease;
+}
+
+.quality-reports-page .ant-radio-wrapper:hover {
+  border-color: #3b82f6;
+  background: #f8fafc;
+}
+
+.quality-reports-page .ant-radio-wrapper-checked {
+  border-color: #3b82f6;
+  background: #eff6ff;
+}
+
+/* 时间选择器样式 */
+.quality-reports-page .ant-picker {
+  width: 100%;
+}
+
+/* 抽屉样式 */
+.quality-reports-page .ant-drawer {
+  border-radius: 8px 0 0 8px;
+}
+
+.quality-reports-page .ant-drawer-header {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 20px 24px;
+  background: #fafafa;
+}
+
+.quality-reports-page .ant-drawer-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.quality-reports-page .ant-drawer-body {
+  padding: 24px;
+}
+
+/* 描述列表样式 */
+.quality-reports-page .ant-descriptions-bordered .ant-descriptions-item-label {
+  background: #f9fafb;
+  font-weight: 500;
+  color: #374151;
+  width: 140px;
+}
+
+.quality-reports-page .ant-descriptions-bordered .ant-descriptions-item-content {
+  background: #fff;
+  color: #1f2937;
+}
+
+/* 进度条样式 */
+.quality-reports-page .ant-progress {
+  margin: 0;
+}
+
+.quality-reports-page .ant-progress-text {
+  font-weight: 500;
+}
+
+/* 开关样式 */
+.quality-reports-page .ant-switch {
+  background: #d1d5db;
+}
+
+.quality-reports-page .ant-switch-checked {
+  background: #10b981;
+}
+
+/* 分页样式 */
+.quality-reports-page .ant-pagination {
+  margin-top: 16px;
+  text-align: right;
+}
+
+.quality-reports-page .ant-pagination-total-text {
+  color: #6b7280;
+}
+
+/* 空状态样式 */
+.quality-reports-page .ant-empty {
+  margin: 40px 0;
+}
+
+.quality-reports-page .ant-empty-description {
+  color: #6b7280;
+}
+
+/* 加载状态样式 */
+.quality-reports-page .ant-spin-container {
+  min-height: 200px;
+}
+
+/* 状态指示器 */
+.quality-reports-page .status-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.quality-reports-page .status-indicator::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* 文件大小显示 */
+.quality-reports-page .file-size {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 12px;
+  background: #f3f4f6;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #374151;
+}
+
+/* 下载计数器 */
+.quality-reports-page .download-count {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #6b7280;
+}
+
+.quality-reports-page .download-count .anticon {
+  font-size: 12px;
+}
+
+/* 邮箱标签样式 */
+.quality-reports-page .email-tag {
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+  .quality-reports-page .ant-table {
+    font-size: 13px;
+  }
+  
+  .reports-header .ant-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .reports-header .ant-col {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .quality-reports-page {
+    gap: 12px;
+  }
+  
+  .reports-tabs .ant-tabs-nav {
+    padding: 4px;
+    margin-bottom: 12px;
+  }
+  
+  .reports-tabs .ant-tabs-tab {
+    padding: 8px 12px;
+    margin: 0 2px;
+  }
+  
+  .reports-header .ant-card-body {
+    padding: 12px 16px;
+  }
+  
+  .quality-reports-page .ant-table-tbody > tr > td {
+    padding: 12px 8px;
+  }
+  
+  .quality-reports-page .ant-modal {
+    margin: 0;
+    max-width: 100vw;
+    top: 0;
+    height: 100vh;
+  }
+  
+  .quality-reports-page .ant-modal-body {
+    max-height: calc(100vh - 120px);
+  }
+  
+  .quality-reports-page .ant-drawer {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .reports-header .ant-space {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .reports-header .ant-input-search,
+  .reports-header .ant-select {
+    width: 100%;
+  }
+  
+  .quality-reports-page .ant-table-tbody > tr > td:last-child {
+    position: sticky;
+    right: 0;
+    background: #fff;
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quality-reports-page .ant-checkbox-group .ant-row {
+    flex-direction: column;
+  }
+  
+  .quality-reports-page .ant-radio-group {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+/* 动画效果 */
+.quality-reports-page .ant-card,
+.quality-reports-page .ant-modal,
+.quality-reports-page .ant-drawer {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 工具提示样式 */
+.quality-reports-page .ant-tooltip-inner {
+  background: #1f2937;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 12px;
+  padding: 8px 12px;
+  max-width: 300px;
+}
+
+.quality-reports-page .ant-tooltip-arrow::before {
+  background: #1f2937;
+}
+
+/* 特殊状态样式 */
+.quality-reports-page .generating-status {
+  animation: generating 1.5s ease-in-out infinite;
+}
+
+@keyframes generating {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.quality-reports-page .completed-status {
+  position: relative;
+}
+
+.quality-reports-page .completed-status::after {
+  content: '✓';
+  position: absolute;
+  right: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #10b981;
+  font-weight: bold;
+}
+
+/* 卡片悬停效果 */
+.quality-reports-page .ant-card {
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.quality-reports-page .ant-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* 按钮组样式 */
+.quality-reports-page .ant-space-compact {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.quality-reports-page .ant-space-compact .ant-btn {
+  border-radius: 0;
+}
+
+.quality-reports-page .ant-space-compact .ant-btn:first-child {
+  border-radius: 6px 0 0 6px;
+}
+
+.quality-reports-page .ant-space-compact .ant-btn:last-child {
+  border-radius: 0 6px 6px 0;
+}

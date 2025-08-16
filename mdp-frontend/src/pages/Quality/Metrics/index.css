@@ -1,0 +1,603 @@
+/**
+ * 质量指标页面样式
+ */
+
+.quality-metrics-page {
+  padding: 24px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* 页面头部样式 */
+.page-header {
+  margin-bottom: 24px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.page-header p {
+  font-size: 14px;
+  color: #8c8c8c;
+}
+
+/* 标签页样式 */
+.metrics-tabs {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.metrics-tabs .ant-tabs-nav {
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0 24px;
+}
+
+.metrics-tabs .ant-tabs-tab {
+  padding: 16px 24px;
+  font-weight: 500;
+  color: #666;
+  border: none;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.metrics-tabs .ant-tabs-tab:hover {
+  color: #1890ff;
+}
+
+.metrics-tabs .ant-tabs-tab-active {
+  color: #1890ff;
+  background-color: #fff;
+  border-radius: 8px 8px 0 0;
+}
+
+.metrics-tabs .ant-tabs-content-holder {
+  padding: 24px;
+}
+
+/* 指标概览样式 */
+.metrics-overview {
+  margin-bottom: 24px;
+}
+
+.metrics-overview .metric-card {
+  text-align: center;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #f0f0f0;
+}
+
+.metrics-overview .metric-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: #1890ff;
+}
+
+.metrics-overview .metric-card .ant-statistic {
+  margin-bottom: 8px;
+}
+
+.metrics-overview .metric-card .ant-statistic-title {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.metrics-overview .metric-card .ant-statistic-content {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.metrics-overview .metric-card .ant-progress {
+  margin-top: 8px;
+}
+
+.metric-status {
+  font-size: 12px;
+  color: #999;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.metric-trend {
+  font-size: 11px;
+  color: #666;
+  margin-top: 2px;
+  opacity: 0.8;
+}
+
+/* 图表卡片样式 */
+.chart-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+  border: 1px solid #f0f0f0;
+}
+
+.chart-card .ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 16px 24px;
+  background-color: #fafafa;
+}
+
+.chart-card .ant-card-head-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.chart-card .ant-card-body {
+  padding: 24px;
+}
+
+.chart-card .recharts-wrapper {
+  margin: 0 auto;
+}
+
+/* 表格卡片样式 */
+.table-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+  border: 1px solid #f0f0f0;
+}
+
+.table-card .ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 16px 24px;
+  background-color: #fafafa;
+}
+
+.table-card .ant-card-head-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.table-card .ant-card-body {
+  padding: 0;
+}
+
+/* 表格样式 */
+.quality-metrics-page .ant-table {
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+}
+
+.quality-metrics-page .ant-table-thead > tr > th {
+  background-color: #fafafa;
+  font-weight: 600;
+  color: #262626;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 16px;
+}
+
+.quality-metrics-page .ant-table-tbody > tr > td {
+  border-bottom: 1px solid #f5f5f5;
+  padding: 16px;
+  vertical-align: middle;
+}
+
+.quality-metrics-page .ant-table-tbody > tr:hover > td {
+  background-color: #f8f9fa;
+}
+
+.quality-metrics-page .ant-table-tbody > tr:last-child > td {
+  border-bottom: none;
+}
+
+/* 进度条样式 */
+.quality-metrics-page .ant-progress-line {
+  margin-top: 4px;
+}
+
+.quality-metrics-page .ant-progress-bg {
+  border-radius: 4px;
+  height: 6px;
+}
+
+.quality-metrics-page .ant-progress-inner {
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  height: 6px;
+}
+
+/* 标签样式 */
+.quality-metrics-page .ant-tag {
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 4px 8px;
+  border: none;
+  font-weight: 500;
+}
+
+/* 按钮样式 */
+.quality-metrics-page .ant-btn {
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  height: 36px;
+  padding: 0 16px;
+}
+
+.quality-metrics-page .ant-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.quality-metrics-page .ant-btn-primary {
+  background: linear-gradient(135deg, #1890ff 0%, #096dd9 100%);
+  border: none;
+}
+
+.quality-metrics-page .ant-btn-primary:hover {
+  background: linear-gradient(135deg, #40a9ff 0%, #1890ff 100%);
+}
+
+/* 选择器样式 */
+.quality-metrics-page .ant-select {
+  border-radius: 6px;
+}
+
+.quality-metrics-page .ant-select-selector {
+  border-radius: 6px;
+  border: 1px solid #d9d9d9;
+  transition: all 0.3s ease;
+  height: 36px;
+}
+
+.quality-metrics-page .ant-select-focused .ant-select-selector {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+/* 统计数值样式 */
+.quality-metrics-page .ant-statistic-content-value {
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* 徽章样式 */
+.quality-metrics-page .ant-badge {
+  font-size: 12px;
+}
+
+.quality-metrics-page .ant-badge-count {
+  border-radius: 10px;
+  min-width: 20px;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* 头像样式 */
+.quality-metrics-page .ant-avatar {
+  border-radius: 6px;
+  background-color: #f0f0f0;
+  color: #666;
+  border: 1px solid #d9d9d9;
+}
+
+/* 分页样式 */
+.quality-metrics-page .ant-pagination {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.quality-metrics-page .ant-pagination-item {
+  border-radius: 6px;
+  border: 1px solid #d9d9d9;
+}
+
+.quality-metrics-page .ant-pagination-item-active {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+.quality-metrics-page .ant-pagination-item-active a {
+  color: #fff;
+}
+
+/* 分布详情样式 */
+.distribution-detail {
+  margin-top: 24px;
+}
+
+.distribution-detail .ant-list-item {
+  padding: 16px 24px;
+  border-bottom: 1px solid #f5f5f5;
+  transition: all 0.3s ease;
+}
+
+.distribution-detail .ant-list-item:hover {
+  background-color: #f8f9fa;
+}
+
+.distribution-detail .ant-list-item:last-child {
+  border-bottom: none;
+}
+
+.distribution-detail .ant-list-item-meta-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #262626;
+  margin-bottom: 8px;
+}
+
+.distribution-detail .ant-list-item-meta-description {
+  color: #666;
+  font-size: 13px;
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+  .quality-metrics-page {
+    padding: 16px;
+  }
+  
+  .page-header {
+    padding: 16px;
+  }
+  
+  .metrics-tabs .ant-tabs-content-holder {
+    padding: 16px;
+  }
+  
+  .metrics-overview .metric-card {
+    height: 120px;
+  }
+  
+  .metrics-overview .metric-card .ant-statistic-content {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .quality-metrics-page {
+    padding: 12px;
+  }
+  
+  .page-header {
+    padding: 12px;
+  }
+  
+  .page-header h2 {
+    font-size: 20px;
+  }
+  
+  .metrics-tabs .ant-tabs-nav {
+    padding: 0 12px;
+  }
+  
+  .metrics-tabs .ant-tabs-tab {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+  
+  .metrics-tabs .ant-tabs-content-holder {
+    padding: 12px;
+  }
+  
+  .chart-card .ant-card-body {
+    padding: 16px;
+  }
+  
+  .metrics-overview .metric-card {
+    height: 100px;
+    margin-bottom: 12px;
+  }
+  
+  .metrics-overview .metric-card .ant-statistic-content {
+    font-size: 20px;
+  }
+  
+  .metrics-overview .metric-card .ant-statistic-title {
+    font-size: 12px;
+  }
+  
+  .quality-metrics-page .ant-table {
+    font-size: 12px;
+  }
+  
+  .quality-metrics-page .ant-table-thead > tr > th,
+  .quality-metrics-page .ant-table-tbody > tr > td {
+    padding: 12px 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .quality-metrics-page {
+    padding: 8px;
+  }
+  
+  .page-header {
+    padding: 8px;
+  }
+  
+  .page-header h2 {
+    font-size: 18px;
+  }
+  
+  .metrics-tabs .ant-tabs-nav {
+    padding: 0 8px;
+  }
+  
+  .metrics-tabs .ant-tabs-tab {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+  
+  .metrics-tabs .ant-tabs-content-holder {
+    padding: 8px;
+  }
+  
+  .chart-card .ant-card-body {
+    padding: 12px;
+  }
+  
+  .metrics-overview .metric-card {
+    height: 80px;
+  }
+  
+  .metrics-overview .metric-card .ant-statistic-content {
+    font-size: 18px;
+  }
+  
+  .quality-metrics-page .ant-table-thead > tr > th,
+  .quality-metrics-page .ant-table-tbody > tr > td {
+    padding: 8px 4px;
+    font-size: 11px;
+  }
+  
+  .distribution-detail .ant-list-item {
+    padding: 12px 8px;
+  }
+}
+
+/* 动画效果 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.quality-metrics-page .ant-card {
+  animation: fadeInUp 0.4s ease-out;
+}
+
+.metrics-overview .metric-card {
+  animation: fadeInUp 0.4s ease-out;
+}
+
+/* 加载状态样式 */
+.quality-metrics-page .ant-spin-container {
+  border-radius: 8px;
+}
+
+.quality-metrics-page .ant-spin-blur {
+  opacity: 0.5;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* 空状态样式 */
+.quality-metrics-page .ant-empty {
+  padding: 60px 0;
+}
+
+.quality-metrics-page .ant-empty-description {
+  color: #999;
+  font-size: 14px;
+}
+
+/* 工具提示样式 */
+.quality-metrics-page .ant-tooltip-inner {
+  border-radius: 6px;
+  font-size: 12px;
+  padding: 8px 12px;
+}
+
+/* 图表自定义样式 */
+.quality-metrics-page .recharts-cartesian-grid-horizontal line,
+.quality-metrics-page .recharts-cartesian-grid-vertical line {
+  stroke: #f0f0f0;
+  stroke-dasharray: 3 3;
+}
+
+.quality-metrics-page .recharts-legend-wrapper {
+  padding-top: 20px;
+}
+
+.quality-metrics-page .recharts-default-tooltip {
+  border-radius: 6px;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 雷达图样式 */
+.quality-metrics-page .recharts-polar-grid-angle line {
+  stroke: #f0f0f0;
+}
+
+.quality-metrics-page .recharts-polar-grid-concentric-polygon {
+  stroke: #f0f0f0;
+  fill: none;
+}
+
+/* 饼图样式 */
+.quality-metrics-page .recharts-pie-label-text {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* 滚动条样式 */
+.quality-metrics-page ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.quality-metrics-page ::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  border-radius: 3px;
+}
+
+.quality-metrics-page ::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+  border-radius: 3px;
+}
+
+.quality-metrics-page ::-webkit-scrollbar-thumb:hover {
+  background: #bfbfbf;
+}
+
+/* 焦点样式 */
+.quality-metrics-page *:focus {
+  outline: 2px solid #1890ff;
+  outline-offset: 2px;
+}
+
+.quality-metrics-page .ant-btn:focus,
+.quality-metrics-page .ant-select-selector:focus {
+  outline: none;
+}
+
+/* 打印样式 */
+@media print {
+  .quality-metrics-page {
+    background: #fff;
+    padding: 0;
+  }
+  
+  .page-header,
+  .chart-card,
+  .table-card {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+  
+  .quality-metrics-page .ant-btn {
+    display: none;
+  }
+}

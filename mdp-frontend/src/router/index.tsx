@@ -15,6 +15,21 @@ import FieldManagementPage from '../pages/FieldManagement';
 import LineageGraph from '../pages/LineageGraph';
 import LineageTracking from '../pages/LineageTracking';
 import ImpactAnalysis from '../pages/ImpactAnalysis';
+// 数据质量页面组件
+import QualityRules from '../pages/Quality/Rules';
+import QualityReports from '../pages/Quality/Reports';
+import QualityMonitoring from '../pages/Quality/Monitoring';
+import QualityMetrics from '../pages/Quality/Metrics';
+// 数据分析页面组件
+import AnalyticsOverview from '../pages/Analytics/Overview';
+import AnalyticsUsage from '../pages/Analytics/Usage';
+import AnalyticsTrends from '../pages/Analytics/Trends';
+// 系统管理页面组件
+import SystemUsers from '../pages/System/Users';
+import SystemRoles from '../pages/System/Roles';
+import SystemPermissions from '../pages/System/Permissions';
+import SystemLogs from '../pages/System/Logs';
+import SystemSettings from '../pages/System/Settings';
 
 /**
  * 路由配置
@@ -128,19 +143,19 @@ export const router = createBrowserRouter([
           },
           {
             path: 'rules',
-            element: <div>质量规则页面开发中...</div>,
+            element: <QualityRules />,
           },
           {
             path: 'reports',
-            element: <div>质量报告页面开发中...</div>,
+            element: <QualityReports />,
           },
           {
             path: 'monitoring',
-            element: <div>质量监控页面开发中...</div>,
+            element: <QualityMonitoring />,
           },
           {
             path: 'metrics',
-            element: <div>质量指标页面开发中...</div>,
+            element: <QualityMetrics />,
           },
         ],
       },
@@ -154,15 +169,15 @@ export const router = createBrowserRouter([
           },
           {
             path: 'overview',
-            element: <div>分析概览页面开发中...</div>,
+            element: <AnalyticsOverview />,
           },
           {
             path: 'usage',
-            element: <div>使用统计页面开发中...</div>,
+            element: <AnalyticsUsage />,
           },
           {
             path: 'trends',
-            element: <div>趋势分析页面开发中...</div>,
+            element: <AnalyticsTrends />,
           },
         ],
       },
@@ -176,23 +191,23 @@ export const router = createBrowserRouter([
           },
           {
             path: 'users',
-            element: <div>用户管理页面开发中...</div>,
+            element: <SystemUsers />,
           },
           {
             path: 'roles',
-            element: <div>角色管理页面开发中...</div>,
+            element: <SystemRoles />,
           },
           {
             path: 'permissions',
-            element: <div>权限管理页面开发中...</div>,
+            element: <SystemPermissions />,
           },
           {
             path: 'logs',
-            element: <div>系统日志页面开发中...</div>,
+            element: <SystemLogs />,
           },
           {
             path: 'settings',
-            element: <div>系统设置页面开发中...</div>,
+            element: <SystemSettings />,
           },
         ],
       },

@@ -1,0 +1,282 @@
+/* 使用统计页面样式 */
+.usage-statistics {
+  padding: 24px;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* 页面头部 */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  padding: 20px 24px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.header-content h2 {
+  margin: 0 0 8px 0;
+  color: #262626;
+  font-weight: 600;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* 图表区域 */
+.charts-row {
+  margin-bottom: 24px;
+}
+
+.chart-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.chart-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.chart-card .ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 16px 24px;
+}
+
+.chart-card .ant-card-head-title {
+  font-weight: 600;
+  color: #262626;
+}
+
+.chart-card .ant-card-body {
+  padding: 24px;
+}
+
+/* 表格卡片 */
+.table-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  margin-bottom: 24px;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.table-header span {
+  font-weight: 600;
+  color: #262626;
+}
+
+/* 用户信息样式 */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: 500;
+  color: #262626;
+  margin-bottom: 2px;
+}
+
+.user-department {
+  font-size: 12px;
+  color: #8c8c8c;
+}
+
+/* 资产信息样式 */
+.asset-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.asset-name {
+  font-weight: 500;
+  color: #262626;
+  margin-bottom: 4px;
+}
+
+.asset-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.asset-category {
+  font-size: 12px;
+  color: #8c8c8c;
+}
+
+/* 访问统计样式 */
+.visit-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.visit-stats .ant-progress {
+  margin: 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+  .page-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+  
+  .header-actions {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 768px) {
+  .usage-statistics {
+    padding: 16px;
+  }
+  
+  .page-header {
+    padding: 16px;
+  }
+  
+  .chart-card .ant-card-body {
+    padding: 16px;
+  }
+  
+  .header-actions {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .table-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .usage-statistics {
+    padding: 12px;
+  }
+  
+  .page-header {
+    padding: 12px;
+  }
+  
+  .chart-card .ant-card-body {
+    padding: 12px;
+  }
+  
+  .user-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .asset-info {
+    gap: 6px;
+  }
+}
+
+/* 动画效果 */
+.chart-card,
+.table-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 表格行悬停效果 */
+.ant-table-tbody > tr:hover > td {
+  background: #f5f5f5 !important;
+}
+
+/* 进度条自定义样式 */
+.ant-progress-line {
+  margin: 0;
+}
+
+.ant-progress-bg {
+  border-radius: 4px;
+}
+
+/* 标签样式优化 */
+.ant-tag {
+  border-radius: 4px;
+  font-size: 11px;
+  padding: 2px 6px;
+  margin: 0;
+}
+
+/* 工具提示样式 */
+.ant-tooltip {
+  font-size: 12px;
+}
+
+/* 搜索框样式 */
+.ant-input-search {
+  border-radius: 6px;
+}
+
+.ant-input-search .ant-input {
+  border-radius: 6px 0 0 6px;
+}
+
+.ant-input-search .ant-btn {
+  border-radius: 0 6px 6px 0;
+}
+
+/* 选择器样式 */
+.ant-select {
+  border-radius: 6px;
+}
+
+.ant-select-selector {
+  border-radius: 6px !important;
+}
+
+/* 按钮样式 */
+.ant-btn {
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* 卡片标题图标 */
+.ant-card-head-title .anticon {
+  margin-right: 8px;
+  color: #1890ff;
+}
+
+/* 表格头部图标 */
+.table-header .anticon {
+  margin-right: 8px;
+  color: #1890ff;
+}

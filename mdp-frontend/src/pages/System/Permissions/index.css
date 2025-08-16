@@ -1,0 +1,613 @@
+/* 权限管理页面样式 */
+.permission-management {
+  padding: 24px;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* 页面头部 */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  padding: 0 4px;
+}
+
+.header-content h2 {
+  margin: 0 0 4px 0;
+  color: #262626;
+  font-weight: 600;
+}
+
+.header-actions {
+  flex-shrink: 0;
+}
+
+/* 主要卡片 */
+.main-card {
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03), 0 1px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px 0 rgba(0, 0, 0, 0.02);
+}
+
+.main-card .ant-card-body {
+  padding: 0;
+}
+
+.main-card .ant-tabs {
+  margin: 0;
+}
+
+.main-card .ant-tabs-content-holder {
+  padding: 24px;
+}
+
+.main-card .ant-tabs-tab {
+  padding: 12px 16px;
+  font-weight: 500;
+}
+
+/* 权限树容器 */
+.tree-container {
+  background: #fff;
+}
+
+/* 筛选区域 */
+.filter-section {
+  padding: 16px;
+  background: #fafafa;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+/* 权限树 */
+.permission-tree {
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #f0f0f0;
+  padding: 16px;
+}
+
+.permission-tree .ant-tree {
+  background: transparent;
+}
+
+.permission-tree .ant-tree-treenode {
+  padding: 4px 0;
+}
+
+.permission-tree .ant-tree-node-content-wrapper {
+  padding: 8px;
+  border-radius: 4px;
+  transition: all 0.2s;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.permission-tree .ant-tree-node-content-wrapper:hover {
+  background: #f0f8ff;
+}
+
+.permission-tree .ant-tree-node-selected {
+  background: #e6f7ff !important;
+}
+
+/* 权限节点样式 */
+.permission-node {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.permission-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.permission-name {
+  font-weight: 500;
+  font-size: 14px;
+  color: #262626;
+}
+
+.permission-code {
+  font-size: 11px;
+  color: #8c8c8c;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  background: #f5f5f5;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-top: 2px;
+}
+
+/* 树节点标题 */
+.tree-node-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.tree-node-actions {
+  opacity: 0;
+  transition: opacity 0.2s;
+  margin-left: 8px;
+}
+
+.tree-node-title:hover .tree-node-actions {
+  opacity: 1;
+}
+
+.tree-node-actions .ant-btn {
+  border: none;
+  box-shadow: none;
+  padding: 2px 4px;
+  height: auto;
+  font-size: 12px;
+  margin-left: 2px;
+}
+
+.tree-node-actions .ant-btn:hover {
+  background: #e6f7ff;
+}
+
+/* 权限分配弹窗 */
+.assign-container {
+  padding: 8px 0;
+}
+
+.permission-assign-tree {
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  padding: 16px;
+  background: #fafafa;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.permission-assign-tree .ant-tree {
+  background: transparent;
+}
+
+.permission-assign-tree .ant-tree-checkbox {
+  margin-right: 8px;
+}
+
+.permission-assign-tree .ant-tree-node-content-wrapper {
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.permission-assign-tree .ant-tree-node-content-wrapper:hover {
+  background: #e6f7ff;
+}
+
+/* 权限详情抽屉 */
+.permission-detail {
+  padding: 8px 0;
+}
+
+.detail-section {
+  margin-bottom: 24px;
+}
+
+.detail-section:last-child {
+  margin-bottom: 0;
+}
+
+.detail-section .ant-descriptions-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 16px;
+}
+
+.detail-section h5 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 12px;
+}
+
+/* 角色和用户表格样式 */
+.permission-management .ant-table {
+  background: #fff;
+}
+
+.permission-management .ant-table-thead > tr > th {
+  background: #fafafa;
+  border-bottom: 1px solid #f0f0f0;
+  font-weight: 600;
+  color: #262626;
+}
+
+.permission-management .ant-table-tbody > tr {
+  transition: all 0.2s;
+}
+
+.permission-management .ant-table-tbody > tr:hover {
+  background: #fafafa;
+}
+
+.permission-management .ant-table-tbody .ant-btn {
+  border: none;
+  box-shadow: none;
+  padding: 4px 8px;
+  height: auto;
+  font-size: 12px;
+}
+
+.permission-management .ant-table-tbody .ant-btn:hover {
+  background: #f0f0f0;
+}
+
+/* 角色名称样式 */
+.role-name {
+  font-weight: 500;
+  font-size: 14px;
+  color: #262626;
+  margin-bottom: 2px;
+}
+
+.role-code {
+  font-size: 11px;
+  color: #8c8c8c;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+}
+
+/* 用户信息样式 */
+.user-name {
+  font-weight: 500;
+  font-size: 14px;
+  color: #262626;
+  margin-bottom: 2px;
+}
+
+.user-username {
+  font-size: 11px;
+  color: #8c8c8c;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+}
+
+/* 弹窗样式 */
+.permission-management .ant-modal-header {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 16px 24px;
+}
+
+.permission-management .ant-modal-body {
+  padding: 24px;
+}
+
+.permission-management .form-actions {
+  margin-bottom: 0;
+  text-align: right;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* 标签样式 */
+.permission-management .ant-tag {
+  border-radius: 4px;
+  font-size: 11px;
+  line-height: 18px;
+  padding: 0 6px;
+  margin: 2px;
+}
+
+/* 徽章样式 */
+.permission-management .ant-badge {
+  font-size: 12px;
+}
+
+.permission-management .ant-badge-count {
+  font-size: 10px;
+  min-width: 16px;
+  height: 16px;
+  line-height: 14px;
+}
+
+/* 开关样式 */
+.permission-management .ant-switch {
+  min-width: 36px;
+  height: 20px;
+}
+
+.permission-management .ant-switch-small {
+  min-width: 28px;
+  height: 16px;
+}
+
+/* 描述列表样式 */
+.permission-detail .ant-descriptions-item-label {
+  font-weight: 500;
+  color: #595959;
+  width: 100px;
+}
+
+.permission-detail .ant-descriptions-item-content {
+  color: #262626;
+}
+
+/* 列表样式 */
+.permission-detail .ant-list-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.permission-detail .ant-list-item:last-child {
+  border-bottom: none;
+}
+
+.permission-detail .ant-list-item-meta-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.permission-detail .ant-list-item-meta-description {
+  font-size: 12px;
+  color: #8c8c8c;
+}
+
+/* 警告信息样式 */
+.permission-management .ant-alert {
+  border-radius: 6px;
+}
+
+.permission-management .ant-alert-info {
+  background: #f6ffed;
+  border: 1px solid #b7eb8f;
+}
+
+.permission-management .ant-alert-info .ant-alert-icon {
+  color: #52c41a;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .permission-management {
+    padding: 16px;
+  }
+  
+  .page-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+  
+  .header-actions {
+    align-self: stretch;
+  }
+  
+  .header-actions .ant-space {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  .main-card .ant-tabs-content-holder {
+    padding: 16px;
+  }
+  
+  .filter-section {
+    padding: 12px;
+  }
+  
+  .permission-tree {
+    padding: 12px;
+  }
+  
+  .tree-node-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .tree-node-actions {
+    opacity: 1;
+    margin-left: 0;
+    align-self: flex-end;
+  }
+  
+  .permission-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .permission-assign-tree {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .permission-management {
+    padding: 12px;
+  }
+  
+  .main-card .ant-tabs-content-holder {
+    padding: 12px;
+  }
+  
+  .permission-management .ant-modal-body {
+    padding: 16px;
+  }
+  
+  .filter-section {
+    padding: 8px;
+  }
+  
+  .permission-tree {
+    padding: 8px;
+  }
+  
+  .permission-node {
+    gap: 2px;
+  }
+  
+  .permission-info {
+    gap: 2px;
+  }
+  
+  .tree-node-actions .ant-btn {
+    padding: 1px 3px;
+    font-size: 11px;
+  }
+}
+
+/* 动画效果 */
+.permission-management .ant-card {
+  transition: all 0.3s ease;
+}
+
+.permission-management .ant-card:hover {
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.02), 0 4px 8px 0 rgba(0, 0, 0, 0.03);
+}
+
+.permission-management .ant-btn {
+  transition: all 0.2s ease;
+}
+
+.permission-management .ant-tree-switcher {
+  transition: all 0.2s ease;
+}
+
+.permission-management .ant-tree-switcher:hover {
+  background: #f0f0f0;
+}
+
+/* 加载状态 */
+.permission-management .ant-spin-container {
+  min-height: 200px;
+}
+
+/* 空状态 */
+.permission-management .ant-empty {
+  padding: 40px 0;
+}
+
+.permission-management .ant-empty-description {
+  color: #8c8c8c;
+  font-size: 13px;
+}
+
+/* 选中状态 */
+.permission-management .ant-tree-node-selected .permission-node {
+  background: transparent;
+}
+
+.permission-management .ant-tree-checkbox-checked .ant-tree-checkbox-inner {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+/* 禁用状态 */
+.permission-management .ant-tree-checkbox-disabled .ant-tree-checkbox-inner {
+  background-color: #f5f5f5;
+  border-color: #d9d9d9;
+}
+
+.permission-management .ant-tree-checkbox-disabled + .ant-tree-node-content-wrapper {
+  color: #bfbfbf;
+}
+
+/* 展开/收起图标 */
+.permission-management .ant-tree-switcher-icon {
+  font-size: 12px;
+  color: #8c8c8c;
+}
+
+.permission-management .ant-tree-switcher-icon:hover {
+  color: #1890ff;
+}
+
+/* 滚动条样式 */
+.permission-tree::-webkit-scrollbar,
+.permission-assign-tree::-webkit-scrollbar {
+  width: 6px;
+}
+
+.permission-tree::-webkit-scrollbar-track,
+.permission-assign-tree::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.permission-tree::-webkit-scrollbar-thumb,
+.permission-assign-tree::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.permission-tree::-webkit-scrollbar-thumb:hover,
+.permission-assign-tree::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* 表单项间距 */
+.permission-management .ant-form-item {
+  margin-bottom: 16px;
+}
+
+.permission-management .ant-form-item:last-child {
+  margin-bottom: 0;
+}
+
+/* 分割线样式 */
+.permission-management .ant-divider {
+  margin: 16px 0;
+  border-color: #f0f0f0;
+}
+
+/* 工具提示样式 */
+.permission-management .ant-tooltip {
+  font-size: 12px;
+}
+
+/* 确认弹窗样式 */
+.permission-management .ant-popconfirm {
+  font-size: 13px;
+}
+
+.permission-management .ant-popconfirm-title {
+  font-weight: 500;
+}
+
+/* 选择器样式 */
+.permission-management .ant-select {
+  font-size: 13px;
+}
+
+.permission-management .ant-select-selector {
+  border-radius: 4px;
+}
+
+/* 输入框样式 */
+.permission-management .ant-input {
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.permission-management .ant-input:focus,
+.permission-management .ant-input-focused {
+  border-color: #40a9ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+/* 文本域样式 */
+.permission-management .ant-input {
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.permission-management .ant-input:focus,
+.permission-management .ant-input-focused {
+  border-color: #40a9ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
